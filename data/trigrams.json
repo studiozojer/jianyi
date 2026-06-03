@@ -1,0 +1,10 @@
+[
+  { "binary": "111", "symbol": "☰", "pinyin": "Qián",  "english": "Heaven",   "quality": "Creative",  "family": "Father"         },
+  { "binary": "110", "symbol": "☱", "pinyin": "Duì",   "english": "Lake",     "quality": "Joyous",    "family": "Third Daughter" },
+  { "binary": "101", "symbol": "☲", "pinyin": "Lí",    "english": "Fire",     "quality": "Clinging",  "family": "Second Daughter"},
+  { "binary": "100", "symbol": "☳", "pinyin": "Zhèn",  "english": "Thunder",  "quality": "Arousing",  "family": "First Son"      },
+  { "binary": "011", "symbol": "☴", "pinyin": "Xùn",   "english": "Wind",     "quality": "Gentle",    "family": "First Daughter" },
+  { "binary": "010", "symbol": "☵", "pinyin": "Kǎn",   "english": "Water",    "quality": "Abysmal",   "family": "Second Son"     },
+  { "binary": "001", "symbol": "☶", "pinyin": "Gèn",   "english": "Mountain", "quality": "Stillness", "family": "Third Son"      },
+  { "binary": "000", "symbol": "☷", "pinyin": "Kūn",   "english": "Earth",    "quality": "Receptive", "family": "Mother"         }
+]
