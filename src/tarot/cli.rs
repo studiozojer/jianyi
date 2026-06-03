@@ -86,7 +86,14 @@ fn render_pretty(result: &DrawResult) -> std::io::Result<()> {
             writeln!(out, "    {}. {} ({})", i + 1, card.card, card.suit)?;
         } else {
             let orientation = if card.upright { "upright" } else { "reversed" };
-            writeln!(out, "    {}. {} ({}, {})", i + 1, card.card, card.suit, orientation)?;
+            writeln!(
+                out,
+                "    {}. {} ({}, {})",
+                i + 1,
+                card.card,
+                card.suit,
+                orientation
+            )?;
         }
     }
     Ok(())

@@ -119,7 +119,7 @@ pub(crate) fn suit_string(card: TarotCard) -> String {
 
 /// Get the full 78-card tarot deck in order
 pub(crate) fn full_deck() -> Vec<TarotCard> {
-    (0..78).filter_map(|i| TarotCard::from_index(i)).collect()
+    (0..78).filter_map(TarotCard::from_index).collect()
 }
 
 /// Get human-readable display name for a tarot card

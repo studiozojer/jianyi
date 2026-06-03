@@ -89,15 +89,28 @@ mod tests {
     #[test]
     fn all_hexagrams_have_6_lines() {
         for h in hexagrams() {
-            assert_eq!(h.lines.len(), 6, "hexagram {} has wrong line count", h.number);
+            assert_eq!(
+                h.lines.len(),
+                6,
+                "hexagram {} has wrong line count",
+                h.number
+            );
         }
     }
 
     #[test]
     fn renderings_are_nonempty() {
         for h in hexagrams() {
-            assert!(!h.judgment.english.is_empty(), "hexagram {} judgment", h.number);
-            assert!(!h.judgment.chinese.is_empty(), "hexagram {} judgment zh", h.number);
+            assert!(
+                !h.judgment.english.is_empty(),
+                "hexagram {} judgment",
+                h.number
+            );
+            assert!(
+                !h.judgment.chinese.is_empty(),
+                "hexagram {} judgment zh",
+                h.number
+            );
             assert!(!h.image.english.is_empty(), "hexagram {} image", h.number);
         }
     }

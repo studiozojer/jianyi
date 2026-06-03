@@ -4,6 +4,7 @@ use std::fmt;
 pub enum Error {
     Generic(String),
     Usage(String),
+    #[allow(dead_code)] // Reserved error variant; used by future lookup commands.
     NotFound(String),
 }
 

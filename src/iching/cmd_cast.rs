@@ -49,8 +49,12 @@ fn print_pretty(result: &crate::iching::CastResult) -> std::io::Result<()> {
     writeln!(out)?;
 
     let primary = lookup_hexagram(result.primary_number).unwrap();
-    let upper = lookup_trigram_by_binary(&primary.upper_trigram).map(|t| t.english.as_str()).unwrap_or("?");
-    let lower = lookup_trigram_by_binary(&primary.lower_trigram).map(|t| t.english.as_str()).unwrap_or("?");
+    let upper = lookup_trigram_by_binary(&primary.upper_trigram)
+        .map(|t| t.english.as_str())
+        .unwrap_or("?");
+    let lower = lookup_trigram_by_binary(&primary.lower_trigram)
+        .map(|t| t.english.as_str())
+        .unwrap_or("?");
     writeln!(out, "  {upper} over {lower}")?;
     writeln!(out)?;
 

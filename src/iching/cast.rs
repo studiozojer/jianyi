@@ -1,3 +1,7 @@
+// Vendored engine module — retains full public API surface including `LineValue::to_bin`.
+// `to_bin` takes `&self` on a Copy type by design (consistency with engine convention).
+#![allow(clippy::wrong_self_convention)]
+
 use crate::iching::data;
 use serde::Serialize;
 use sha2::{Digest, Sha256};

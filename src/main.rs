@@ -10,7 +10,11 @@ mod tarot;
 use output::OutputFormat;
 
 #[derive(Parser)]
-#[command(name = "jianyi", version, about = "A lightweight, offline I Ching and tarot CLI.")]
+#[command(
+    name = "jianyi",
+    version,
+    about = "A lightweight, offline I Ching and tarot CLI."
+)]
 struct Cli {
     /// Emit JSON instead of pretty output. Stable schema; suitable for scripts.
     #[arg(long, global = true)]
@@ -30,7 +34,11 @@ enum Command {
 
 fn main() -> ExitCode {
     let cli = Cli::parse();
-    let output = if cli.json { OutputFormat::Json } else { OutputFormat::Pretty };
+    let output = if cli.json {
+        OutputFormat::Json
+    } else {
+        OutputFormat::Pretty
+    };
 
     let result = match cli.command {
         Command::Iching(args) => iching::cli::run(args, output),

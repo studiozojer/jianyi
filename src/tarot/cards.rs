@@ -1,4 +1,7 @@
 //! Tarot card types for random card generation
+// Vendored engine module — retains full public API surface even when not all items are
+// exercised by the CLI. Dead-code and transmute-annotation lints suppressed intentionally.
+#![allow(dead_code, clippy::missing_transmute_annotations)]
 
 use rand::Rng;
 use serde::{Deserialize, Serialize};

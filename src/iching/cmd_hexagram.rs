@@ -17,12 +17,17 @@ pub struct Args {
 
 pub fn run(args: Args, output: OutputFormat) -> Result<(), Error> {
     let hex = lookup_hexagram(args.number).ok_or_else(|| {
-        Error::Usage(format!("hexagram {} not found — valid range is 1–64", args.number))
+        Error::Usage(format!(
+            "hexagram {} not found — valid range is 1–64",
+            args.number
+        ))
     })?;
 
     if args.glyph {
         if output == OutputFormat::Json {
-            return Err(Error::Usage("--glyph is not compatible with --json".to_string()));
+            return Err(Error::Usage(
+                "--glyph is not compatible with --json".to_string(),
+            ));
         }
         let render = render_lines(&lines_from_binary(&hex.binary));
         let mut stdout = std::io::stdout().lock();
@@ -38,7 +43,11 @@ pub fn run(args: Args, output: OutputFormat) -> Result<(), Error> {
     .map_err(Error::from)
 }
 
-pub(super) fn render_hexagram(out: &mut impl Write, h: &HexagramRecord, full: bool) -> io::Result<()> {
+pub(super) fn render_hexagram(
+    out: &mut impl Write,
+    h: &HexagramRecord,
+    full: bool,
+) -> io::Result<()> {
     let upper = crate::iching::data::lookup_trigram_by_binary(&h.upper_trigram)
         .map(|t| format!("{} ({})", t.english, t.quality))
         .unwrap_or_default();
@@ -46,7 +55,11 @@ pub(super) fn render_hexagram(out: &mut impl Write, h: &HexagramRecord, full: bo
         .map(|t| format!("{} ({})", t.english, t.quality))
         .unwrap_or_default();
 
-    writeln!(out, "{}. {} {} — {}", h.number, h.chinese, h.pinyin, h.english)?;
+    writeln!(
+        out,
+        "{}. {} {} — {}",
+        h.number, h.chinese, h.pinyin, h.english
+    )?;
     writeln!(out, "{upper} over {lower}")?;
     writeln!(out)?;
     write!(out, "{}", render_lines(&lines_from_binary(&h.binary)))?;

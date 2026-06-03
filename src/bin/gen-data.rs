@@ -52,16 +52,31 @@ fn parse_node(md: &str) -> Result<Prose, String> {
             "Lines" => lines = parse_lines(&body)?,
             "Our reading" => {
                 let t = body.trim();
-                hexagram_reading = if t.is_empty() { None } else { Some(t.to_string()) };
+                hexagram_reading = if t.is_empty() {
+                    None
+                } else {
+                    Some(t.to_string())
+                };
             }
             _ => {}
         }
     }
 
     if lines.len() != 6 {
-        return Err(format!("hexagram {number}: expected 6 lines, got {}", lines.len()));
+        return Err(format!(
+            "hexagram {number}: expected 6 lines, got {}",
+            lines.len()
+        ));
     }
-    Ok(Prose { number, judgment_zh, judgment_en, image_zh, image_en, lines, hexagram_reading })
+    Ok(Prose {
+        number,
+        judgment_zh,
+        judgment_en,
+        image_zh,
+        image_en,
+        lines,
+        hexagram_reading,
+    })
 }
 
 /// Drop ```-fenced code blocks (the ASCII glyph art) from a section body.
@@ -87,7 +102,12 @@ fn split_bold_then_prose(body: &str) -> Result<(String, String), String> {
         .lines()
         .find(|l| l.trim_start().starts_with("**"))
         .ok_or("missing bold chinese line")?;
-    let zh = bold.trim().trim_start_matches("**").trim_end_matches("**").trim().to_string();
+    let zh = bold
+        .trim()
+        .trim_start_matches("**")
+        .trim_end_matches("**")
+        .trim()
+        .to_string();
     // English = first non-empty line after the bold line that is not itself bold.
     let mut after_bold = false;
     let mut en = String::new();
@@ -100,10 +120,18 @@ fn split_bold_then_prose(body: &str) -> Result<(String, String), String> {
         }
         let t = line.trim();
         if t.is_empty() {
-            if en.is_empty() { continue; } else { break; }
+            if en.is_empty() {
+                continue;
+            } else {
+                break;
+            }
         }
-        if t.starts_with("**") { break; }
-        if !en.is_empty() { en.push(' '); }
+        if t.starts_with("**") {
+            break;
+        }
+        if !en.is_empty() {
+            en.push(' ');
+        }
         en.push_str(t);
     }
     if en.is_empty() {
@@ -130,7 +158,10 @@ fn parse_lines(body: &str) -> Result<Vec<(String, String)>, String> {
             let mut j = i + 1;
             while j < lines.len() {
                 let t = lines[j].trim();
-                if t.is_empty() { j += 1; continue; }
+                if t.is_empty() {
+                    j += 1;
+                    continue;
+                }
                 en = t.to_string();
                 break;
             }
@@ -150,9 +181,10 @@ fn main() {
     let graph_dir = std::env::args()
         .nth(1)
         .unwrap_or_else(|| "../../tycho/graphs/divination/i-ching/hexagrams".to_string());
-    let structure: serde_json::Value =
-        serde_json::from_str(&std::fs::read_to_string("data/structure.json").expect("structure.json"))
-            .expect("structure.json parse");
+    let structure: serde_json::Value = serde_json::from_str(
+        &std::fs::read_to_string("data/structure.json").expect("structure.json"),
+    )
+    .expect("structure.json parse");
     let skeleton = structure.as_array().expect("structure is array");
 
     let mut out = Vec::new();
@@ -200,18 +232,26 @@ fn main() {
 /// Graph node files are named `<N>-<glyph>.md`; match on the numeric prefix.
 fn find_node(dir: &Path, number: u8) -> Option<std::path::PathBuf> {
     let prefix = format!("{number}-");
-    std::fs::read_dir(dir).ok()?.filter_map(|e| e.ok()).find_map(|e| {
-        let name = e.file_name();
-        let name = name.to_string_lossy();
-        if name.starts_with(&prefix) && name.ends_with(".md") {
-            // guard against "1-" matching "11-"
-            let after = &name[prefix.len()..];
-            if after.chars().next().map(|c| !c.is_ascii_digit()).unwrap_or(false) {
-                return Some(e.path());
+    std::fs::read_dir(dir)
+        .ok()?
+        .filter_map(|e| e.ok())
+        .find_map(|e| {
+            let name = e.file_name();
+            let name = name.to_string_lossy();
+            if name.starts_with(&prefix) && name.ends_with(".md") {
+                // guard against "1-" matching "11-"
+                let after = &name[prefix.len()..];
+                if after
+                    .chars()
+                    .next()
+                    .map(|c| !c.is_ascii_digit())
+                    .unwrap_or(false)
+                {
+                    return Some(e.path());
+                }
             }
-        }
-        None
-    })
+            None
+        })
 }
 
 #[cfg(test)]
