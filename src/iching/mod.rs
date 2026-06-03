@@ -5,6 +5,12 @@ pub mod hexagram_data;
 pub mod render;
 pub mod trigram;
 
+pub mod cli;
+pub mod cmd_cast;
+pub mod cmd_compose;
+pub mod cmd_hexagram;
+pub mod cmd_trigram;
+
 pub use cast::{cast, CastResult, LineValue};
 pub use compose::{parse as parse_expr, Expr, ParseError};
 pub use data::{lookup_hexagram, lookup_hexagram_by_binary, HexagramRecord, Rendering, TrigramRecord};
