@@ -13,8 +13,15 @@ categories = ["command-line-utilities"]
 name = "jianyi"
 path = "src/main.rs"
 
-# NOTE: the dev-only `gen-data` binary is declared in Task 4 (once its source
-# exists), feature-gated so default builds / `cargo install` never compile it.
+# Dev-only data generator, gated behind a feature so default builds and
+# `cargo install` never compile it. Run: cargo run --bin gen-data --features gen-data
+[[bin]]
+name = "gen-data"
+path = "src/bin/gen-data.rs"
+required-features = ["gen-data"]
+
+[features]
+gen-data = []
 
 [dependencies]
 clap = { version = "4", features = ["derive", "env"] }

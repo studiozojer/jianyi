@@ -1,0 +1,3586 @@
+[
+  {
+    "binary": "111111",
+    "chinese": "乾",
+    "english": "The Creative",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "天行健，君子以自強不息。",
+      "english": "Heaven moves with unfailing strength. The noble one, in accordance with this, ceaselessly strengthens himself."
+    },
+    "judgment": {
+      "chinese": "元亨利貞。",
+      "english": "The Creative works sublime success. Furthering through perseverance. What originates, what penetrates, what benefits, what endures — these four qualities belong to the pure yang principle."
+    },
+    "lines": [
+      {
+        "chinese": "初九：潛龍勿用。",
+        "english": "Hidden dragon. Do not act. The yang force is still below, not yet ready to emerge. Wait.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：見龍在田，利見大人。",
+        "english": "The dragon appears in the field. It is favorable to see the great person. Influence begins to manifest visibly.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：君子終日乾乾，夕惕若厲，無咎。",
+        "english": "The noble one is active and vigilant all day. At evening still alert and cautious. Danger, but no blame.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：或躍在淵，無咎。",
+        "english": "Perhaps leaping over the abyss. No blame. A moment of choice — to advance or withdraw. Either way is sound.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：飛龍在天，利見大人。",
+        "english": "The dragon flies in heaven. It is favorable to see the great person. Full expression of creative power in its proper place.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：亢龍有悔。",
+        "english": "The dragon overreaches. There will be cause for regret. What rises to the extreme must turn back.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "111",
+    "number": 1,
+    "pinyin": "Qián",
+    "upper_trigram": "111"
+  },
+  {
+    "binary": "000000",
+    "chinese": "坤",
+    "english": "The Receptive",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "地勢坤，君子以厚德載物。",
+      "english": "The earth's condition is receptive devotion. The noble one, with generous virtue, carries all things."
+    },
+    "judgment": {
+      "chinese": "元亨，利牝馬之貞。君子有攸往，先迷後得主，利。西南得朋，東北喪朋。安貞吉。",
+      "english": "Sublime success. Furthering through the perseverance of a mare. If the noble one undertakes something and tries to lead, he goes astray. But if he follows, he finds guidance. In the southwest, gain companions. In the northeast, lose companions. Quiet perseverance brings good fortune."
+    },
+    "lines": [
+      {
+        "chinese": "初六：履霜，堅冰至。",
+        "english": "Treading on frost. Solid ice is coming. What begins subtly will develop fully. Recognize the direction of things early.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：直方大，不習無不利。",
+        "english": "Straight, square, great. Without deliberate effort, nothing is unfavorable. The natural quality of earth: receptive, spacious, requiring no contrivance.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：含章可貞。或從王事，無成有終。",
+        "english": "Containing inner pattern, one can be steadfast. If serving in affairs of state, do not seek to complete things yourself, yet bring them to fruition.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：括囊，無咎無譽。",
+        "english": "A tied-up sack. No blame, no praise. In times of danger, restraint and concealment are appropriate. Nothing is gained, but nothing is lost.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：黃裳，元吉。",
+        "english": "A yellow lower garment. Supreme good fortune. Yellow is the color of the center; the lower garment signifies modesty. Centrality and humility together.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：龍戰于野，其血玄黃。",
+        "english": "Dragons fight in the open field. Their blood is dark and yellow. When yin pushes to the extreme and contends with yang, both are wounded.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "000",
+    "number": 2,
+    "pinyin": "Kūn",
+    "upper_trigram": "000"
+  },
+  {
+    "binary": "100010",
+    "chinese": "屯",
+    "english": "Difficulty at the Beginning",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "雲雷屯，君子以經綸。",
+      "english": "Clouds and thunder: the image of difficulty at the beginning. The noble one brings order out of confusion, as one sorts threads of silk."
+    },
+    "judgment": {
+      "chinese": "元亨利貞，勿用有攸往，利建侯。",
+      "english": "Sublime success. Furthering through perseverance. Do not undertake anything yet. It is favorable to appoint helpers. The beginning is chaotic — like a blade of grass pushing through the earth. Gather support rather than forcing forward."
+    },
+    "lines": [
+      {
+        "chinese": "初九：磐桓，利居貞，利建侯。",
+        "english": "Hesitation and circling. It is favorable to remain steadfast. It is favorable to appoint helpers. Do not press forward alone when conditions resist.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：屯如邅如，乘馬班如。匪寇婚媾，女子貞不字，十年乃字。",
+        "english": "Difficulty upon difficulty. Horses and rider turn back. It is not a bandit but a suitor. The maiden remains chaste and does not yield. After ten years she commits. What seems threatening is actually an offer — but the timing is not yet right.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：即鹿無虞，惟入于林中。君子幾不如舍，往吝。",
+        "english": "Pursuing deer without a guide, one only loses oneself in the forest. The noble one perceives the signs and would rather give up. Going forward brings regret.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：乘馬班如，求婚媾，往吉，無不利。",
+        "english": "Horses and rider turn back. Seeking union. Going forward brings good fortune, nothing unfavorable. When help is sought sincerely, it comes.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：屯其膏，小貞吉，大貞凶。",
+        "english": "Difficulty in distributing one's bounty. Small perseverance brings good fortune. Great perseverance brings misfortune. One cannot impose generosity by force — give in small measure.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：乘馬班如，泣血漣如。",
+        "english": "Horses and rider turn back. Tears of blood flow. The difficulty has become overwhelming. There is no way forward from this position.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "100",
+    "number": 3,
+    "pinyin": "Zhūn",
+    "upper_trigram": "010"
+  },
+  {
+    "binary": "010001",
+    "chinese": "蒙",
+    "english": "Youthful Folly",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "山下出泉，蒙。君子以果行育德。",
+      "english": "A spring emerges at the foot of the mountain: the image of youthful folly. The noble one cultivates virtue through decisive action."
+    },
+    "judgment": {
+      "chinese": "亨。匪我求童蒙，童蒙求我。初筮告，再三瀆，瀆則不告。利貞。",
+      "english": "Success. It is not I who seeks the young fool — the young fool seeks me. At the first inquiry I give instruction. If he asks two or three times, it is importunity. If importunate, I give no instruction. Perseverance is favorable."
+    },
+    "lines": [
+      {
+        "chinese": "初六：發蒙，利用刑人，用說桎梏，以往吝。",
+        "english": "Uncovering folly. It is favorable to discipline. Remove the fetters. But going too far brings regret. Structure liberates, but excessive punishment does not.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：包蒙吉。納婦吉。子克家。",
+        "english": "Bearing with the foolish brings good fortune. Taking a wife brings good fortune. The son is capable of managing the household. Patience and acceptance of immaturity in others.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：勿用取女，見金夫，不有躬，無攸利。",
+        "english": "Do not take this woman. She sees a man of wealth and loses her composure. Nothing is favorable. One who abandons integrity for gain is not to be trusted.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：困蒙，吝。",
+        "english": "Entangled in folly. Regret. Bound up in fantasy, cut off from reality. This isolation brings shame.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：童蒙，吉。",
+        "english": "Childlike folly. Good fortune. Approaching learning with genuine innocence and openness — this is the right disposition.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：擊蒙，不利為寇，利禦寇。",
+        "english": "Striking at folly. It does not serve to act aggressively. It serves to defend against aggression. Correction should protect, not punish.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "010",
+    "number": 4,
+    "pinyin": "Méng",
+    "upper_trigram": "001"
+  },
+  {
+    "binary": "111010",
+    "chinese": "需",
+    "english": "Waiting",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "雲上於天，需。君子以飲食宴樂。",
+      "english": "Clouds rise above heaven: the image of waiting. The noble one eats, drinks, and is at ease. While rain gathers but has not yet fallen, there is nothing to do but nourish oneself."
+    },
+    "judgment": {
+      "chinese": "有孚，光亨，貞吉。利涉大川。",
+      "english": "Sincere confidence. Brilliant success. Perseverance brings good fortune. It is favorable to cross the great water. When one waits with inner certainty, nourishment comes in its own time."
+    },
+    "lines": [
+      {
+        "chinese": "初九：需于郊，利用恆，無咎。",
+        "english": "Waiting in the open countryside. It is favorable to abide in what endures. No blame. Danger is still far off — maintain regularity.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：需于沙，小有言，終吉。",
+        "english": "Waiting on the sand. There is some gossip. The end brings good fortune. Closer to the water now — minor irritations, but the outcome is sound.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：需于泥，致寇至。",
+        "english": "Waiting in the mud. This invites the arrival of enemies. One has ventured too close to danger. Caution and care are needed to avoid disaster.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：需于血，出自穴。",
+        "english": "Waiting in blood. One must get out of the pit. The situation is extreme — yield and withdraw. There is no way through except by stepping back.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：需于酒食，貞吉。",
+        "english": "Waiting amid food and drink. Perseverance brings good fortune. Even in the midst of danger, inner composure and nourishment sustain one.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：入于穴，有不速之客三人來，敬之終吉。",
+        "english": "One falls into the pit. Three uninvited guests arrive. Receive them with respect, and the end brings good fortune. What comes unbidden may carry what is needed.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "111",
+    "number": 5,
+    "pinyin": "Xū",
+    "upper_trigram": "010"
+  },
+  {
+    "binary": "010111",
+    "chinese": "訟",
+    "english": "Conflict",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "天與水違行，訟。君子以作事謀始。",
+      "english": "Heaven and water move in opposite directions: the image of conflict. The noble one, in undertaking affairs, plans carefully from the beginning."
+    },
+    "judgment": {
+      "chinese": "有孚窒惕，中吉，終凶。利見大人，不利涉大川。",
+      "english": "Sincerity is obstructed. Cautious halt midway brings good fortune. Carrying through to the end brings misfortune. It is favorable to see the great person. It is not favorable to cross the great water. In conflict, seek mediation rather than escalation."
+    },
+    "lines": [
+      {
+        "chinese": "初六：不永所事，小有言，終吉。",
+        "english": "Do not prolong the affair. There is some gossip. The end brings good fortune. Let the matter go early — minor friction resolves itself.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：不克訟，歸而逋其邑人三百戶，無眚。",
+        "english": "One cannot carry the conflict. Return home and withdraw among one's three hundred households. No misfortune. When outmatched, retreat is wisdom.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：食舊德，貞厲，終吉。或從王事，無成。",
+        "english": "Living on the merit of old virtue. Perseverance is dangerous but the end brings good fortune. If serving in affairs of state, do not seek accomplishment for yourself.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：不克訟，復即命，渝安貞吉。",
+        "english": "One cannot carry the conflict. Return and submit to fate. Change course and find peace in perseverance. Good fortune. Accepting what is brings rest.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：訟，元吉。",
+        "english": "Conflict before the great person. Supreme good fortune. A just arbiter resolves the dispute.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：或錫之鞶帶，終朝三褫之。",
+        "english": "Perhaps a leather belt is bestowed, but by the end of the morning it is torn away three times. Even if one wins through conflict, the victory cannot be kept.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "010",
+    "number": 6,
+    "pinyin": "Sòng",
+    "upper_trigram": "111"
+  },
+  {
+    "binary": "010000",
+    "chinese": "師",
+    "english": "The Army",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "地中有水，師。君子以容民畜眾。",
+      "english": "Water within the earth: the image of the army. The noble one is generous to the people and gathers the multitude. The army is latent in the populace as water is stored in the earth."
+    },
+    "judgment": {
+      "chinese": "貞，丈人吉，無咎。",
+      "english": "Perseverance. The experienced leader brings good fortune. No blame. An army requires discipline, and discipline requires a leader of genuine authority — not merely rank, but character."
+    },
+    "lines": [
+      {
+        "chinese": "初六：師出以律，否臧凶。",
+        "english": "The army sets forth in proper order. If discipline is lacking, misfortune. Without order from the start, any campaign collapses.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：在師中吉，無咎，王三錫命。",
+        "english": "In the midst of the army. Good fortune, no blame. The king bestows a threefold commission. The capable leader at the center, trusted by the sovereign.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：師或輿尸，凶。",
+        "english": "The army perhaps carries corpses in the wagon. Misfortune. Too many leaders, no clear command — the result is defeat.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：師左次，無咎。",
+        "english": "The army retreats. No blame. When the situation does not favor advance, an orderly withdrawal is correct.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：田有禽，利執言，無咎。長子帥師，弟子輿尸，貞凶。",
+        "english": "Game in the field — it is favorable to seize it. No blame. Let the eldest son lead the army. If the younger son carries the corpses, perseverance brings misfortune. Appoint the capable one; do not delegate to the inexperienced.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：大君有命，開國承家，小人勿用。",
+        "english": "The great ruler issues commands. Founding states, establishing families. But do not employ small-minded people. After victory, reward merit — but keep the unworthy from power.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "010",
+    "number": 7,
+    "pinyin": "Shī",
+    "upper_trigram": "000"
+  },
+  {
+    "binary": "000010",
+    "chinese": "比",
+    "english": "Holding Together",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "地上有水，比。先王以建萬國，親諸侯。",
+      "english": "Water upon the earth: the image of holding together. The ancient kings established myriad states and maintained close ties with the feudal lords. Water flows over earth and collects — union is natural, not forced."
+    },
+    "judgment": {
+      "chinese": "吉。原筮元永貞，無咎。不寧方來，後夫凶。",
+      "english": "Good fortune. Inquire of the oracle once more: do you have sublimity, constancy, and perseverance? Then no blame. Those who are restless gradually join. Whoever comes too late meets misfortune."
+    },
+    "lines": [
+      {
+        "chinese": "初六：有孚比之，無咎。有孚盈缶，終來有他吉。",
+        "english": "Holding together with sincerity. No blame. When sincerity fills the vessel like an overflowing jar, other good fortune comes in the end.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：比之自內，貞吉。",
+        "english": "Holding together from within. Perseverance brings good fortune. The bond arises from inner affinity, not external pressure.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：比之匪人。",
+        "english": "Holding together with the wrong people. One associates with those who are not suitable. Examine your allegiances.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：外比之，貞吉。",
+        "english": "Holding together with those outside. Perseverance brings good fortune. Openly allying with the leader above — loyalty expressed without concealment.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：顯比。王用三驅，失前禽。邑人不誡，吉。",
+        "english": "Manifest union. The king uses three beaters in the hunt, letting the game that runs ahead escape. The townspeople need no warning. Good fortune. True leadership holds through openness, not coercion. What wants to leave may leave.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：比之無首，凶。",
+        "english": "Holding together without a head. Misfortune. Union that never truly began — without a genuine beginning, there can be no proper bond.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "000",
+    "number": 8,
+    "pinyin": "Bǐ",
+    "upper_trigram": "010"
+  },
+  {
+    "binary": "111011",
+    "chinese": "小畜",
+    "english": "Small Taming",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "風行天上，小畜。君子以懿文德。",
+      "english": "Wind moves across heaven: the image of small taming. The noble one refines the outward expression of his virtue. When great action is not yet possible, attend to cultivation and form."
+    },
+    "judgment": {
+      "chinese": "亨。密雲不雨，自我西郊。",
+      "english": "Success. Dense clouds but no rain, coming from the western outskirts. The restraining power is gentle — it holds the strong in check for now, but cannot yet bring the matter to completion. Conditions gather but have not yet broken through."
+    },
+    "lines": [
+      {
+        "chinese": "初九：復自道，何其咎，吉。",
+        "english": "Returning to one's own path. How could there be blame? Good fortune. When held back, return to what you know. The way forward begins from where you are.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：牽復，吉。",
+        "english": "Drawn back along the way. Good fortune. One does not advance alone but returns with a companion. Mutual influence pulls both back to center.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：輿說輻，夫妻反目。",
+        "english": "The wagon's spokes break loose. Husband and wife avert their eyes from each other. The restraint has created tension — things fall apart at the point of strain.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：有孚，血去惕出，無咎。",
+        "english": "Sincerity. Blood departs, apprehension departs. No blame. Through genuine truthfulness, danger and fear dissolve.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：有孚攣如，富以其鄰。",
+        "english": "Sincerity that binds together. Wealth shared with one's neighbors. True bonds of loyalty create shared prosperity.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：既雨既處，尚德載。婦貞厲，月幾望。君子征凶。",
+        "english": "The rain has come, rest has been achieved. Virtue is honored and sustained. The wife's perseverance brings danger. The moon is nearly full. If the noble one presses forward now, misfortune. What has been gathered reaches its limit — do not push further.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "111",
+    "number": 9,
+    "pinyin": "Xiǎo Chù",
+    "upper_trigram": "011"
+  },
+  {
+    "binary": "110111",
+    "chinese": "履",
+    "english": "Treading",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "上天下澤，履。君子以辨上下，定民志。",
+      "english": "Heaven above, the lake below: the image of treading. The noble one distinguishes between high and low and thereby gives the people a settled sense of direction."
+    },
+    "judgment": {
+      "chinese": "履虎尾，不咥人，亨。",
+      "english": "Treading on the tail of the tiger. It does not bite. Success. One walks in a dangerous situation, but inner cheerfulness and proper conduct prevent harm. The key is not strength but manner."
+    },
+    "lines": [
+      {
+        "chinese": "初九：素履往，無咎。",
+        "english": "Treading in simplicity. Going forward. No blame. When one's conduct is plain and unadorned, one can move freely without entanglement.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：履道坦坦，幽人貞吉。",
+        "english": "Treading a smooth and level path. A solitary person's perseverance brings good fortune. The way is clear for one who walks without ambition or contention.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：眇能視，跛能履，履虎尾，咥人，凶。武人為于大君。",
+        "english": "The one-eyed can still see, the lame can still walk — but treading on the tiger's tail now, it bites. Misfortune. A soldier acts on behalf of a great lord. Overestimating one's capacity invites disaster.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：履虎尾，愬愬，終吉。",
+        "english": "Treading on the tail of the tiger. Cautious and apprehensive. The end brings good fortune. Fear itself, when it produces care, keeps one safe.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：夬履，貞厲。",
+        "english": "Resolute treading. Perseverance is dangerous. Even in a position of power, decisiveness must be tempered with awareness of risk.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：視履考祥，其旋元吉。",
+        "english": "Looking back on one's conduct and examining the omens. If everything is thorough, supreme good fortune. At the end, review the whole path — completeness of conduct determines the outcome.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "110",
+    "number": 10,
+    "pinyin": "Lǚ",
+    "upper_trigram": "111"
+  },
+  {
+    "binary": "111000",
+    "chinese": "泰",
+    "english": "Peace",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "天地交泰，后以財成天地之道，輔相天地之宜，以左右民。",
+      "english": "Heaven and earth unite: the image of peace. The ruler shapes and completes the way of heaven and earth, assists the proper order of heaven and earth, and so aids the people on every side."
+    },
+    "judgment": {
+      "chinese": "小往大來，吉亨。",
+      "english": "The small departs, the great approaches. Good fortune and success. Heaven and earth mingle — the creative descends, the receptive rises. Their energies meet and all things flourish."
+    },
+    "lines": [
+      {
+        "chinese": "初九：拔茅茹以其彙，征吉。",
+        "english": "Pulling up rushes — they come together in a cluster. Undertaking brings good fortune. When the time is right, like-minded people move forward together.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：包荒，用馮河，不遐遺，朋亡，得尚于中行。",
+        "english": "Bearing with the uncultivated, crossing the river by force if necessary, not neglecting what is distant, abandoning partisan ties — thus one holds to the middle way.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：無平不陂，無往不復。艱貞無咎。勿恤其孚，于食有福。",
+        "english": "No plain without a slope, no going without a return. Perseverance in difficulty brings no blame. Do not worry about sincerity — in nourishment there is blessing. Every peak of prosperity contains the seed of its turning.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：翩翩不富以其鄰，不戒以孚。",
+        "english": "Fluttering, not wealthy, together with one's neighbors. Without admonition, through sincerity. In times of peace, those above descend without pretense to join those below.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：帝乙歸妹，以祉元吉。",
+        "english": "Emperor Yi gives his daughter in marriage. Blessing and supreme good fortune. The ruler connects above and below through humble generosity.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：城復于隍，勿用師。自邑告命，貞吝。",
+        "english": "The city wall falls back into the moat. Do not use the army. From the town itself comes the command. Perseverance brings regret. Peace has collapsed from within. Force cannot restore it now.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "111",
+    "number": 11,
+    "pinyin": "Tài",
+    "upper_trigram": "000"
+  },
+  {
+    "binary": "000111",
+    "chinese": "否",
+    "english": "Standstill",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "天地不交，否。君子以儉德辟難，不可榮以祿。",
+      "english": "Heaven and earth do not unite: the image of standstill. The noble one withdraws into his inner worth to avoid difficulties. He does not permit himself to be honored with a salary."
+    },
+    "judgment": {
+      "chinese": "否之匪人，不利君子貞，大往小來。",
+      "english": "Standstill. Evil people do not further the perseverance of the noble one. The great departs, the small approaches. Heaven and earth do not mingle. All things are blocked. The worthy withdraw; the unworthy advance."
+    },
+    "lines": [
+      {
+        "chinese": "初六：拔茅茹以其彙，貞吉亨。",
+        "english": "Pulling up rushes — they come together in a cluster. Perseverance brings good fortune and success. In stagnation, the like-minded withdraw together. Shared retreat is strength.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：包承，小人吉，大人否亨。",
+        "english": "Bearing and enduring. Good fortune for the small person. The great person accepts the standstill and thereby finds success. The noble one does not compromise integrity for comfort.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：包羞。",
+        "english": "Bearing shame. The inferior ones in power begin to feel the shame of their position. The turning is not yet visible, but the awareness stirs.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：有命無咎，疇離祉。",
+        "english": "There is a mandate. No blame. Those of like mind share in blessing. The moment to act approaches — align with those who share the vision.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：休否，大人吉。其亡其亡，繫于苞桑。",
+        "english": "Standstill comes to a halt. Good fortune for the great person. \"It may perish, it may perish\" — and so it is bound fast to the roots of the mulberry bush. Awareness of danger is itself the anchor.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：傾否，先否後喜。",
+        "english": "The standstill is overturned. First standstill, then joy. Stagnation does not last forever. What was blocked breaks open through its own ripeness.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "000",
+    "number": 12,
+    "pinyin": "Pǐ",
+    "upper_trigram": "111"
+  },
+  {
+    "binary": "101111",
+    "chinese": "同人",
+    "english": "Fellowship",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "天與火，同人。君子以類族辨物。",
+      "english": "Heaven together with fire: the image of fellowship. The noble one organizes people into groups and distinguishes among things. Fire rises toward heaven — their natures align."
+    },
+    "judgment": {
+      "chinese": "同人于野，亨。利涉大川，利君子貞。",
+      "english": "Fellowship in the open. Success. It is favorable to cross the great water. The perseverance of the noble one is favorable. True fellowship is not exclusive alliance but open communion — under the wide sky, not behind closed doors."
+    },
+    "lines": [
+      {
+        "chinese": "初九：同人于門，無咎。",
+        "english": "Fellowship at the gate. No blame. At the beginning, fellowship is open — no exclusive bonds have formed. This openness is correct.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：同人于宗，吝。",
+        "english": "Fellowship within the clan. Regret. When fellowship narrows to faction, it loses its genuine character.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：伏戎于莽，升其高陵，三歲不興。",
+        "english": "Hiding weapons in the thicket, climbing the high hill. For three years no rising. Suspicion and hidden motives undermine fellowship. One watches from ambush but cannot act.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：乘其墉，弗克攻，吉。",
+        "english": "Climbing the wall but unable to attack. Good fortune. Hostility rises but does not carry through — the recognition that conflict would be wrong brings one back.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：同人先號咷而後笑，大師克相遇。",
+        "english": "Fellowship: first weeping and lamentation, then laughter. The great armies meet. After difficult struggle and separation, genuine connection is achieved. The bond that survives conflict is real.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：同人于郊，無悔。",
+        "english": "Fellowship in the open countryside. No regret. At the boundary, fellowship is without intensity but also without complication. A modest connection, free of entanglement.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "101",
+    "number": 13,
+    "pinyin": "Tóng Rén",
+    "upper_trigram": "111"
+  },
+  {
+    "binary": "111101",
+    "chinese": "大有",
+    "english": "Great Possession",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "火在天上，大有。君子以遏惡揚善，順天休命。",
+      "english": "Fire above heaven: the image of great possession. The noble one curbs evil and promotes good, in obedience to the benevolent will of heaven."
+    },
+    "judgment": {
+      "chinese": "元亨。",
+      "english": "Supreme success. Fire above heaven — brightness illuminating everything far and wide. A time of abundance and clarity, where all things come into the light."
+    },
+    "lines": [
+      {
+        "chinese": "初九：無交害，匪咎，艱則無咎。",
+        "english": "No dealings with what is harmful. No blame. If one remains aware of difficulty, there is no blame. In abundance, the danger is complacency. Stay alert.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：大車以載，有攸往，無咎。",
+        "english": "A great wagon for loading. One may undertake something. No blame. Capacity matches responsibility — there is room for the weight.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：公用亨于天子，小人弗克。",
+        "english": "A prince offers a feast to the Son of Heaven. A small person cannot do this. Only one of genuine standing can offer abundance to what is above.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：匪其彭，無咎。",
+        "english": "Not relying on one's fullness. No blame. In the midst of abundance, one does not inflate or overextend. This restraint prevents error.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：厥孚交如，威如，吉。",
+        "english": "Sincerity that is both accessible and dignified. Good fortune. True authority is neither rigid nor loose — it commands respect through its own transparency.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：自天祐之，吉無不利。",
+        "english": "Blessed by heaven. Good fortune, nothing unfavorable. When one acts in accordance with the good and holds to what is true, heaven itself supports the effort.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "111",
+    "number": 14,
+    "pinyin": "Dà Yǒu",
+    "upper_trigram": "101"
+  },
+  {
+    "binary": "001000",
+    "chinese": "謙",
+    "english": "Modesty",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "地中有山，謙。君子以裒多益寡，稱物平施。",
+      "english": "A mountain within the earth: the image of modesty. The noble one reduces what is too much and increases what is too little. He weighs things and distributes them evenly."
+    },
+    "judgment": {
+      "chinese": "亨，君子有終。",
+      "english": "Success. The noble one carries things to completion. Modesty is the one quality that all the hexagrams honor. The mountain stands beneath the earth — what is great places itself below. This creates enduring success."
+    },
+    "lines": [
+      {
+        "chinese": "初六：謙謙君子，用涉大川，吉。",
+        "english": "A noble one modest about his modesty. It is favorable to cross the great water. Good fortune. The most genuine humility does not know itself as humility.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：鳴謙，貞吉。",
+        "english": "Modesty that expresses itself. Perseverance brings good fortune. When modesty speaks, it is not performance but the natural sounding of inner character.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：勞謙君子，有終吉。",
+        "english": "A noble one who labors and remains modest. He carries things to completion. Good fortune. Genuine accomplishment does not call attention to itself.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：無不利，撝謙。",
+        "english": "Nothing unfavorable. Displaying modesty. In action, modesty is not inaction — it moves, but without self-aggrandizement.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：不富以其鄰，利用侵伐，無不利。",
+        "english": "Not wealthy, together with one's neighbors. It is favorable to take forceful measures. Nothing unfavorable. Even firmness and decisive action are possible from a position of genuine modesty — indeed, they are more effective.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：鳴謙，利用行師，征邑國。",
+        "english": "Modesty that expresses itself. It is favorable to set armies marching, to discipline one's own city and state. At the limit, even modesty must act with force — but only upon oneself, one's own domain.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "001",
+    "number": 15,
+    "pinyin": "Qiān",
+    "upper_trigram": "000"
+  },
+  {
+    "binary": "000100",
+    "chinese": "豫",
+    "english": "Enthusiasm",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "雷出地奮，豫。先王以作樂崇德，殷薦之上帝，以配祖考。",
+      "english": "Thunder rises out of the earth with force: the image of enthusiasm. The ancient kings made music to honor virtue, offering it in splendor to the Supreme Deity, inviting the presence of their ancestors."
+    },
+    "judgment": {
+      "chinese": "利建侯行師。",
+      "english": "It is favorable to appoint helpers and to set armies marching. Thunder rises out of the earth — the energy of enthusiasm moves all things. When the moment of readiness arrives, action becomes effortless."
+    },
+    "lines": [
+      {
+        "chinese": "初六：鳴豫，凶。",
+        "english": "Enthusiasm that proclaims itself. Misfortune. When one boasts of one's readiness or joy, the substance has already begun to leak away.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：介于石，不終日，貞吉。",
+        "english": "Firm as a rock. Not even a whole day is needed. Perseverance brings good fortune. One who perceives the first sign of what is coming does not wait — clarity of perception brings timely action.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：盱豫悔，遲有悔。",
+        "english": "Enthusiasm that looks upward with longing. Hesitation brings regret. Looking to another for the right moment instead of finding it within oneself — delay compounds the error.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：由豫，大有得。勿疑，朋盍簪。",
+        "english": "The source of enthusiasm. Great gains. Do not doubt. Friends gather like hair held by a clasp. The one who generates genuine enthusiasm naturally draws others.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：貞疾，恆不死。",
+        "english": "Perseverance in illness — one does not die. Constant pressure without release. The situation is chronically strained, but perseverance maintains life, if not health.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：冥豫成，有渝無咎。",
+        "english": "Enthusiasm that has gone dark reaches completion. If there is a change of course, no blame. Blind enthusiasm finally exhausts itself — but even now, a change of direction averts disaster.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "000",
+    "number": 16,
+    "pinyin": "Yù",
+    "upper_trigram": "100"
+  },
+  {
+    "binary": "100110",
+    "chinese": "隨",
+    "english": "Following",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "澤中有雷，隨。君子以嚮晦入宴息。",
+      "english": "Thunder within the lake: Following. The superior person, as darkness falls, turns inward to rest. When the time for action has passed, one withdraws and renews."
+    },
+    "judgment": {
+      "chinese": "隨，元亨，利貞，無咎。",
+      "english": "Following brings supreme success. It is favorable to persist. No blame. When the time calls for following, one must know how to adapt. To follow rightly requires firmness within yielding."
+    },
+    "lines": [
+      {
+        "chinese": "官有渝，貞吉。出門交有功。",
+        "english": "Standards are changing. Persistence brings good fortune. Going out and engaging with others leads to achievement.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "係小子，失丈夫。",
+        "english": "If one clings to the boy, one loses the strong one. One cannot follow two paths at once — choose what has substance.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "係丈夫，失小子。隨有求得，利居貞。",
+        "english": "If one follows the strong one, one loses the boy. Through following, what is sought is found. It is favorable to remain steadfast.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "隨有獲，貞凶。有孚在道，以明，何咎。",
+        "english": "Following brings gain, yet persistence here brings misfortune. If there is sincerity and one remains on the path with clarity, what blame can there be?",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "孚于嘉，吉。",
+        "english": "Sincerity toward what is excellent. Good fortune. When one follows what is truly good, the outcome is blessed.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "拘係之，乃從維之。王用亨于西山。",
+        "english": "Bound and tied, then held fast. The king makes offerings at the Western Mountain. Devotion reaches its highest expression — spirit answers genuine commitment.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "100",
+    "number": 17,
+    "pinyin": "Suí",
+    "upper_trigram": "110"
+  },
+  {
+    "binary": "011001",
+    "chinese": "蠱",
+    "english": "Work on What Has Been Spoiled",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "山下有風，蠱。君子以振民育德。",
+      "english": "Wind below the mountain: Decay. The superior person stirs up the people and nourishes virtue. What has stagnated must be set in motion again through cultivated character."
+    },
+    "judgment": {
+      "chinese": "蠱，元亨，利涉大川。先甲三日，後甲三日。",
+      "english": "Work on what has been spoiled brings supreme success. It is favorable to cross the great water. Three days before the turning point, three days after. Decay is not the end — it is the call to renewal. Deliberation before and after action ensures the repair holds."
+    },
+    "lines": [
+      {
+        "chinese": "幹父之蠱，有子，考無咎，厲終吉。",
+        "english": "Setting right the father's decay. If there is a capable heir, the father is without blame. Danger, but good fortune in the end.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "幹母之蠱，不可貞。",
+        "english": "Setting right the mother's decay. One cannot be too forceful. Gentleness is needed when correcting what is delicate.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "幹父之蠱，小有悔，無大咎。",
+        "english": "Setting right the father's decay. There is slight regret, but no great blame. Some friction is inevitable when repairing what was neglected.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "裕父之蠱，往見吝。",
+        "english": "Tolerating the father's decay. Going forward brings humiliation. Indulgence toward corruption only deepens it.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "幹父之蠱，用譽。",
+        "english": "Setting right the father's decay. One wins praise. Restoring what was damaged, done with skill, earns genuine respect.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "不事王侯，高尚其事。",
+        "english": "Not serving kings and princes, but setting one's aims higher. Some work on decay transcends worldly obligation — it serves a deeper order.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "011",
+    "number": 18,
+    "pinyin": "Gǔ",
+    "upper_trigram": "001"
+  },
+  {
+    "binary": "110000",
+    "chinese": "臨",
+    "english": "Approach",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "澤上有地，臨。君子以教思無窮，容保民無疆。",
+      "english": "Earth above the lake: Approach. The superior person's thought in teaching is inexhaustible, and in sheltering and sustaining the people, without limit. True authority approaches through boundless care."
+    },
+    "judgment": {
+      "chinese": "臨，元亨，利貞。至于八月有凶。",
+      "english": "Approach brings supreme success. Persistence is favorable. But when the eighth month arrives, there will be misfortune. What advances now will eventually recede — one must prepare for the turning even in times of increase."
+    },
+    "lines": [
+      {
+        "chinese": "咸臨，貞吉。",
+        "english": "Approaching together. Persistence brings good fortune. Joint action, grounded in shared purpose, succeeds.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "咸臨，吉，無不利。",
+        "english": "Approaching together. Good fortune. Nothing that is not favorable. When the momentum of approach is genuine, everything moves in its favor.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "甘臨，無攸利。既憂之，無咎。",
+        "english": "Complacent approach. Nothing is favorable. But if one recognizes the danger and grieves over it, no blame.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "至臨，無咎。",
+        "english": "Approaching fully. No blame. Drawing near without reservation, meeting what arrives directly.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "知臨，大君之宜，吉。",
+        "english": "Wise approach. This befits a great ruler. Good fortune. Knowing how to draw near — with discernment, not force — is the mark of true leadership.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "敦臨，吉，無咎。",
+        "english": "Generous approach. Good fortune. No blame. Approaching with magnanimity and sincerity completes the movement.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "110",
+    "number": 19,
+    "pinyin": "Lín",
+    "upper_trigram": "000"
+  },
+  {
+    "binary": "000011",
+    "chinese": "觀",
+    "english": "Contemplation",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "風行地上，觀。先王以省方觀民設教。",
+      "english": "Wind moves over the earth: Contemplation. The ancient kings visited all regions, observed the people, and gave instruction. To see clearly is to know what is needed."
+    },
+    "judgment": {
+      "chinese": "觀，盥而不薦，有孚顒若。",
+      "english": "Contemplation. The ablution has been made, but not yet the offering. Full of sincerity, dignified in bearing. The moment of stillness before the ritual act — when inner preparation is complete and presence radiates outward without effort."
+    },
+    "lines": [
+      {
+        "chinese": "童觀，小人無咎，君子吝。",
+        "english": "Childlike contemplation. For the small-minded, no blame. For the superior person, humiliation. Seeing only surfaces suffices for those who carry no responsibility, but not for one who must lead.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "闚觀，利女貞。",
+        "english": "Peeping through the crack of the door. Favorable for a woman's persistence. Seeing only what is framed by a narrow opening — limited perspective may serve in limited circumstances.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "觀我生，進退。",
+        "english": "Contemplating one's own life — whether to advance or withdraw. Self-reflection becomes the basis for right action.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "觀國之光，利用賓于王。",
+        "english": "Contemplating the glory of the realm. It is favorable to act as a guest of the king. One who sees the larger pattern clearly is fit to serve.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "觀我生，君子無咎。",
+        "english": "Contemplating one's own life. The superior person is without blame. True self-observation, conducted without flinching, clears the way.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "觀其生，君子無咎。",
+        "english": "Contemplating the life of others. The superior person is without blame. At the highest vantage, one sees not only oneself but how one's influence moves through the world.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "000",
+    "number": 20,
+    "pinyin": "Guān",
+    "upper_trigram": "011"
+  },
+  {
+    "binary": "100101",
+    "chinese": "噬嗑",
+    "english": "Biting Through",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "雷電，噬嗑。先王以明罰敕法。",
+      "english": "Thunder and lightning: Biting Through. The ancient kings made penalties clear and enforced the laws. Clarity and force together — illumination shows the obstruction, power removes it."
+    },
+    "judgment": {
+      "chinese": "噬嗑，亨。利用獄。",
+      "english": "Biting Through brings success. It is favorable to administer justice. When an obstacle lies between the jaws, one must bite through it. Decisive action clears what obstructs union."
+    },
+    "lines": [
+      {
+        "chinese": "屨校滅趾，無咎。",
+        "english": "Feet locked in stocks so the toes disappear. No blame. A small punishment at the beginning prevents greater transgression.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "噬膚滅鼻，無咎。",
+        "english": "Biting through tender meat so the nose is covered. No blame. The matter yields easily — the judgment, though strong, is proportionate.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "噬腊肉，遇毒。小吝，無咎。",
+        "english": "Biting on dried meat and encountering poison. Slight humiliation, but no blame. The case is old and difficult; unpleasant truths surface, but one must persist.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "噬乾胏，得金矢。利艱貞，吉。",
+        "english": "Biting on dried bony meat and finding a metal arrowhead. It is favorable to be mindful of difficulty and to persist. Good fortune. A hard case requiring both toughness and integrity.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "噬乾肉，得黃金。貞厲，無咎。",
+        "english": "Biting on dried meat and finding yellow gold. Persistence in the face of danger. No blame. The difficulty contains something valuable — truth itself.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "何校滅耳，凶。",
+        "english": "Wearing a wooden cangue that covers the ears. Misfortune. One who refuses to hear warnings until punishment is extreme brings ruin upon oneself.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "100",
+    "number": 21,
+    "pinyin": "Shì Kè",
+    "upper_trigram": "101"
+  },
+  {
+    "binary": "101001",
+    "chinese": "賁",
+    "english": "Grace",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "山下有火，賁。君子以明庶政，無敢折獄。",
+      "english": "Fire at the foot of the mountain: Grace. The superior person brings clarity to the conduct of affairs but does not dare to decide lawsuits on the basis of form alone. Appearance illuminates but must not be mistaken for truth."
+    },
+    "judgment": {
+      "chinese": "賁，亨。小利有攸往。",
+      "english": "Grace brings success. In small matters it is favorable to have somewhere to go. Beauty and form have their place, but grace adorns — it does not create substance. In minor affairs, elegant form serves well; in great matters, substance must lead."
+    },
+    "lines": [
+      {
+        "chinese": "賁其趾，舍車而徒。",
+        "english": "Gracing one's toes. Leaving the carriage to walk. One forgoes outward comfort for the dignity of standing on one's own.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "賁其須。",
+        "english": "Gracing one's beard. Adornment follows what is above — form follows substance, not the reverse.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "賁如濡如，永貞吉。",
+        "english": "Graced and glistening. Lasting persistence brings good fortune. When beauty and substance are joined and sustained, the result endures.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "賁如皤如，白馬翰如。匪寇婚媾。",
+        "english": "Graced in white, like a white horse with wings. Not a robber but a suitor. What appears threatening is actually an approach made in sincerity, stripped to essential simplicity.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "賁于丘園，束帛戔戔。吝，終吉。",
+        "english": "Grace in the hills and gardens. The roll of silk is meager. Humiliation, but good fortune in the end. Simplicity may seem poor at first but proves more lasting than lavish display.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "白賁，無咎。",
+        "english": "White grace. No blame. The highest form of adornment is the absence of adornment — pure simplicity, undecorated truth.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "101",
+    "number": 22,
+    "pinyin": "Bì",
+    "upper_trigram": "001"
+  },
+  {
+    "binary": "000001",
+    "chinese": "剝",
+    "english": "Splitting Apart",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "山附於地，剝。上以厚下安宅。",
+      "english": "The mountain rests upon the earth: Splitting Apart. Those above ensure their position by being generous to those below. When the foundation is cared for, collapse is averted."
+    },
+    "judgment": {
+      "chinese": "剝，不利有攸往。",
+      "english": "Splitting Apart. It is not favorable to have somewhere to go. The dark forces are in ascendancy, stripping away what was built. This is not the time for action but for yielding to the cycle and waiting for renewal."
+    },
+    "lines": [
+      {
+        "chinese": "剝床以足，蔑貞凶。",
+        "english": "The leg of the bed is split away. Those who disregard persistence meet misfortune. Destruction begins at the foundation.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "剝床以辨，蔑貞凶。",
+        "english": "The frame of the bed is split away. Those who disregard persistence meet misfortune. The deterioration advances — the structure is losing its support.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "剝之，無咎。",
+        "english": "Splitting away — but no blame. One who breaks from what is decaying and aligns with what is sound acts rightly, even amid general collapse.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "剝床以膚，凶。",
+        "english": "The bed is split to the skin. Misfortune. Destruction has reached the person directly — the danger is no longer abstract.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "貫魚，以宮人寵，無不利。",
+        "english": "A string of fish. Favor comes through the court ladies. Nothing unfavorable. Leading what is beneath with grace, one transforms the situation from within.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "碩果不食，君子得輿，小人剝廬。",
+        "english": "The large fruit remains uneaten. The superior person obtains a carriage. The inferior person's shelter is stripped away. What is not consumed becomes the seed of renewal. The cycle turns.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "000",
+    "number": 23,
+    "pinyin": "Bō",
+    "upper_trigram": "001"
+  },
+  {
+    "binary": "100000",
+    "chinese": "復",
+    "english": "Return",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "雷在地中，復。先王以至日閉關，商旅不行，后不省方。",
+      "english": "Thunder within the earth: Return. The ancient kings closed the passes at the solstice. Merchants and travelers did not journey. The ruler did not inspect the regions. At the moment of return, stillness is required — the new impulse must be allowed to gather strength."
+    },
+    "judgment": {
+      "chinese": "復，亨。出入無疾，朋來無咎。反復其道，七日來復。利有攸往。",
+      "english": "Return brings success. Going out and coming in without haste. Friends arrive without blame. The way turns back upon itself; after seven days comes the return. It is favorable to have somewhere to go. The light returns after its darkest point — the turning is natural, not forced."
+    },
+    "lines": [
+      {
+        "chinese": "不遠復，無祗悔，元吉。",
+        "english": "Returning before going far. No deep regret. Supreme good fortune. Catching oneself early — before the deviation becomes a pattern — is the highest form of return.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "休復，吉。",
+        "english": "Quiet return. Good fortune. Returning through the influence of what is good nearby — drawn back by the presence of something worthy.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "頻復，厲，無咎。",
+        "english": "Repeated return. Danger, but no blame. Returning again and again — the pattern is unstable, but the impulse to return is genuine.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "中行獨復。",
+        "english": "Walking in the middle, one returns alone. Choosing the right path even when no one follows — solitary integrity.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "敦復，無悔。",
+        "english": "Generous return. No regret. Returning with wholehearted sincerity, without calculating the cost.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "迷復，凶，有災眚。用行師，終有大敗。以其國，君凶。至于十年不克征。",
+        "english": "Lost in return. Misfortune. Disaster and calamity. If armies are sent forth, the end is great defeat. For the ruler of the land, misfortune. For ten years, unable to campaign. Missing the moment of return entirely — forcing action when the cycle demands yielding.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "100",
+    "number": 24,
+    "pinyin": "Fù",
+    "upper_trigram": "000"
+  },
+  {
+    "binary": "100111",
+    "chinese": "無妄",
+    "english": "Innocence",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "天下雷行，物與無妄。先王以茂對時育萬物。",
+      "english": "Under heaven, thunder rolls and all things are given innocence. The ancient kings, rich in virtue and aligned with the season, nourished all beings. What moves in accord with its nature requires no justification."
+    },
+    "judgment": {
+      "chinese": "無妄，元亨，利貞。其匪正有眚，不利有攸往。",
+      "english": "Innocence brings supreme success. Persistence is favorable. If one is not righteous, there will be calamity, and it is not favorable to have somewhere to go. Acting from the uncalculated center — without ulterior motive — succeeds. Any deviation from what is natural invites disaster."
+    },
+    "lines": [
+      {
+        "chinese": "無妄往，吉。",
+        "english": "Innocent action. Good fortune. Moving from genuine impulse, without calculation — this is the simplest and most fortunate beginning.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "不耕穫，不菑畬，則利有攸往。",
+        "english": "Not counting on the harvest while plowing, not counting on the field while clearing it. Then it is favorable to have somewhere to go. Acting for the sake of the action itself, not for the result.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "無妄之災，或繫之牛，行人之得，邑人之災。",
+        "english": "Undeserved misfortune. Someone tethers an ox; a traveler takes it, and the townspeople are blamed. Sometimes disaster falls without reason — innocence does not guarantee immunity from external calamity.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "可貞，無咎。",
+        "english": "One can persist. No blame. Holding to what is genuinely one's own cannot be taken away.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "無妄之疾，勿藥有喜。",
+        "english": "An illness that comes without cause. Do not use medicine — there will be joy. What arises naturally resolves naturally. Interference would make it worse.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "無妄行，有眚，無攸利。",
+        "english": "Innocent action, yet there is calamity. Nothing is favorable. Even innocence, when the time is not right, cannot force a good outcome. Wait.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "100",
+    "number": 25,
+    "pinyin": "Wú Wàng",
+    "upper_trigram": "111"
+  },
+  {
+    "binary": "111001",
+    "chinese": "大畜",
+    "english": "Great Taming",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "天在山中，大畜。君子以多識前言往行，以畜其德。",
+      "english": "Heaven within the mountain: Great Taming. The superior person studies the words and deeds of the ancients in order to accumulate virtue. Inner strength is built through learning and restraint."
+    },
+    "judgment": {
+      "chinese": "大畜，利貞。不家食，吉。利涉大川。",
+      "english": "Great Taming. Persistence is favorable. Not eating at home brings good fortune. It is favorable to cross the great water. Great power held in check — accumulated, not spent. One whose reserves are deep should serve in the wider world, not remain in private comfort."
+    },
+    "lines": [
+      {
+        "chinese": "有厲，利已。",
+        "english": "There is danger. It is favorable to stop. When powerful energy first meets restraint, one must recognize the boundary and halt.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "輿說輹。",
+        "english": "The axle straps are removed from the carriage. The vehicle of forward motion is voluntarily disabled — power restrains itself before pressing forward.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "良馬逐，利艱貞。曰閑輿衛，利有攸往。",
+        "english": "Fine horses in pursuit. It is favorable to persist through difficulty. Daily practice in defense and driving. It is favorable to have somewhere to go. Trained strength, disciplined energy — ready for the great undertaking.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "童牛之牿，元吉。",
+        "english": "The headboard on a young bull. Supreme good fortune. Restraining wild energy early, before it becomes unmanageable, is the wisest approach.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "豶豕之牙，吉。",
+        "english": "The tusk of a gelded boar. Good fortune. The danger has been neutralized at its root — not by destroying the force but by redirecting it.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "何天之衢，亨。",
+        "english": "Carrying the way of heaven. Success. The accumulated power is released — the great crossing is achieved. Restraint has produced its full fruit.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "111",
+    "number": 26,
+    "pinyin": "Dà Chù",
+    "upper_trigram": "001"
+  },
+  {
+    "binary": "100001",
+    "chinese": "頤",
+    "english": "Nourishment",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "山下有雷，頤。君子以慎言語，節飲食。",
+      "english": "Thunder beneath the mountain: Nourishment. The superior person is careful with words and moderate in eating and drinking. What goes in and what comes out — both require discernment."
+    },
+    "judgment": {
+      "chinese": "頤，貞吉。觀頤，自求口實。",
+      "english": "Nourishment. Persistence brings good fortune. Observe how nourishment is given: what one feeds on and what one provides. Pay attention to what enters the mouth and what comes out of it — both sustenance and speech reveal character."
+    },
+    "lines": [
+      {
+        "chinese": "舍爾靈龜，觀我朵頤，凶。",
+        "english": "Setting aside your sacred turtle and watching me with jaw hanging open. Misfortune. Abandoning one's own inner resources to covet what others possess.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "顛頤，拂經于丘頤，征凶。",
+        "english": "Turning to the summit for nourishment, deviating from the path to seek sustenance on the hill. Advancing brings misfortune. Seeking nourishment from improper sources, abandoning one's own ground.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "拂頤，貞凶。十年勿用，無攸利。",
+        "english": "Turning away from nourishment. Persistence brings misfortune. For ten years, do not act. Nothing is favorable. Pursuing what does not truly nourish — the consequences are long-lasting.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "顛頤，吉。虎視眈眈，其欲逐逐，無咎。",
+        "english": "Turning to the summit for nourishment. Good fortune. Watching like a tiger with insatiable desire. No blame. Here the hunger to provide for others drives one upward — the intensity serves a purpose.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "拂經，居貞吉，不可涉大川。",
+        "english": "Deviating from the path. Remaining still and persisting brings good fortune. One cannot cross the great water. Accepting one's limitations in providing nourishment — staying within one's capacity.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "由頤，厲吉。利涉大川。",
+        "english": "The source of nourishment. Danger, but good fortune. It is favorable to cross the great water. The one from whom all nourishment flows — a weighty responsibility, but one that enables great undertakings.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "100",
+    "number": 27,
+    "pinyin": "Yí",
+    "upper_trigram": "001"
+  },
+  {
+    "binary": "011110",
+    "chinese": "大過",
+    "english": "Preponderance of the Great",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "澤滅木，大過。君子以獨立不懼，遯世無悶。",
+      "english": "The lake rises above the trees: Preponderance of the Great. The superior person stands alone without fear and withdraws from the world without melancholy. In extreme times, one must be willing to stand apart."
+    },
+    "judgment": {
+      "chinese": "大過，棟橈，利有攸往，亨。",
+      "english": "Preponderance of the Great. The ridgepole sags. It is favorable to have somewhere to go. Success. The load exceeds what the structure can bear — extraordinary times require extraordinary measures. One must move, not stand still under a buckling beam."
+    },
+    "lines": [
+      {
+        "chinese": "藉用白茅，無咎。",
+        "english": "Spreading white rushes beneath. No blame. Extraordinary care at the outset — even excessive caution serves when the stakes are great.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "枯楊生稊，老夫得其女妻，無不利。",
+        "english": "The withered willow puts forth shoots. The old man takes a young wife. Nothing unfavorable. Renewal comes from unlikely sources — new life emerges where none was expected.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "棟橈，凶。",
+        "english": "The ridgepole buckles. Misfortune. The structure cannot hold — refusing support or insisting on bearing the weight alone leads to collapse.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "棟隆，吉。有它吝。",
+        "english": "The ridgepole is braced upward. Good fortune. But if there are ulterior motives, humiliation. Strengthening the structure succeeds only when done with integrity.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "枯楊生華，老婦得其士夫，無咎無譽。",
+        "english": "The withered willow puts forth flowers. The old woman takes a young husband. No blame, no praise. A last flowering — beautiful but bearing no fruit. Not wrong, but not fruitful.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "過涉滅頂，凶，無咎。",
+        "english": "Wading through the flood until the water covers one's head. Misfortune, but no blame. One who sacrifices everything for a principle may perish, but is not at fault. The act itself has meaning.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "011",
+    "number": 28,
+    "pinyin": "Dà Guò",
+    "upper_trigram": "110"
+  },
+  {
+    "binary": "010010",
+    "chinese": "坎",
+    "english": "The Abysmal",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "水洊至，習坎。君子以常德行，習教事。",
+      "english": "Water flows on and reaches its goal: The Abysmal repeated. The superior person walks in lasting virtue and carries on the work of teaching. As water consistently follows its nature, so one must hold to principle through repeated danger."
+    },
+    "judgment": {
+      "chinese": "習坎，有孚，維心亨，行有尚。",
+      "english": "The Abysmal repeated. If there is sincerity, the heart finds its way through. Action meets with esteem. Danger upon danger — water flows into the abyss and fills it, then flows on. It does not shrink from the depths. Sincerity is what carries one through."
+    },
+    "lines": [
+      {
+        "chinese": "習坎，入于坎窞，凶。",
+        "english": "The Abysmal repeated. One falls into the pit within the abyss. Misfortune. Lost in danger, one sinks deeper. Familiarity with peril has not bred mastery but complacency.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "坎有險，求小得。",
+        "english": "The abyss holds danger. One seeks and gains only a little. In the midst of danger, small gains are all that can be managed — but they are enough to survive.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "來之坎坎，險且枕，入于坎窞，勿用。",
+        "english": "Coming and going, abyss upon abyss. Danger and a resting place — one enters the pit within the abyss. Do not act. Trapped between dangers, one must wait. Action here only deepens the peril.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "樽酒簋貳，用缶，納約自牖，終無咎。",
+        "english": "A jug of wine, two bowls of rice, offered in earthen vessels, passed in through the window. In the end, no blame. In times of danger, sincerity in simple form reaches where elaborate offerings cannot.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "坎不盈，祗既平，無咎。",
+        "english": "The abyss is not filled to overflowing. It is leveled off. No blame. The danger does not exceed what can be managed — one passes through without being overwhelmed.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "係用徽纆，寘于叢棘，三歲不得，凶。",
+        "english": "Bound with cords and ropes, placed among thorns. For three years one does not find the way. Misfortune. Entangled in danger for too long — the lesson was not learned when it could have been.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "010",
+    "number": 29,
+    "pinyin": "Kǎn",
+    "upper_trigram": "010"
+  },
+  {
+    "binary": "101101",
+    "chinese": "離",
+    "english": "The Clinging",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "明兩作，離。大人以繼明照于四方。",
+      "english": "Brightness doubled: The Clinging. The great person, by perpetuating this brightness, illuminates the four quarters of the world. Light sustained through continuity — one flame kindling the next."
+    },
+    "judgment": {
+      "chinese": "離，利貞，亨。畜牝牛，吉。",
+      "english": "The Clinging. Persistence is favorable. Success. Keeping a cow brings good fortune. Fire depends on fuel to burn — clinging to what is right sustains the light. The cow represents the yielding nature through which brightness endures."
+    },
+    "lines": [
+      {
+        "chinese": "履錯然，敬之，無咎。",
+        "english": "Treading in confusion. If one is respectful, no blame. At the start, clarity has not yet settled. Approaching with care and reverence prevents missteps.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "黃離，元吉。",
+        "english": "Yellow brightness. Supreme good fortune. The light at its most centered — the middle way of illumination, neither harsh nor dim.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "日昃之離，不鼓缶而歌，則大耋之嗟，凶。",
+        "english": "The brightness of the setting sun. If one does not beat the pot and sing, one will sigh like one of great age. Misfortune. When the light declines, one must either accept the cycle with grace or fall into despair.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "突如其來如，焚如，死如，棄如。",
+        "english": "Coming suddenly — burning, dying, cast away. The fire that flares up without preparation burns out just as fast. Intensity without foundation destroys itself.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "出涕沱若，戚嗟若，吉。",
+        "english": "Tears flow in streams, sighing and lamenting. Good fortune. Genuine grief at what is lost purifies — through honest mourning, one returns to clarity.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "王用出征，有嘉折首，獲匪其醜，無咎。",
+        "english": "The king goes forth to war. There is praise. He breaks the heads of the leaders but captures their followers without blame. Decisive clarity in distinguishing the root from the branches — strike the source of darkness, not those who were merely swept along.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "101",
+    "number": 30,
+    "pinyin": "Lí",
+    "upper_trigram": "101"
+  },
+  {
+    "binary": "001110",
+    "chinese": "咸",
+    "english": "Influence",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "山上有澤，咸。君子以虛受人。",
+      "english": "The lake on the mountain: Influence. The superior person receives others with openness. The mountain hollows itself to hold the lake — receptivity is what allows influence to flow."
+    },
+    "judgment": {
+      "chinese": "咸，亨，利貞。取女吉。",
+      "english": "Influence. Success. Persistence is favorable. Taking a wife brings good fortune. Mutual attraction, the natural drawing together of what belongs together. The mountain stands still below, the lake rests above — the yielding is above, the firm below. Each responds to the other without coercion."
+    },
+    "lines": [
+      {
+        "chinese": "咸其拇。",
+        "english": "Influence in the big toe. The first stirring — barely perceptible, not yet reaching outward. An intention forms before it can act.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "咸其腓，凶。居吉。",
+        "english": "Influence in the calves. Misfortune. Remaining still brings good fortune. The impulse to rush forward before the time is right — better to wait than to act from mere restlessness.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "咸其股，執其隨，往吝。",
+        "english": "Influence in the thighs. Holding fast to what follows. Going forward brings humiliation. Following every impulse without discernment — movement driven by desire rather than understanding.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "貞吉，悔亡。憧憧往來，朋從爾思。",
+        "english": "Persistence brings good fortune. Regret vanishes. Restless coming and going — only those friends aligned with your thought will follow. When influence arises from the center of one's being, it reaches exactly who it should.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "咸其脢，無悔。",
+        "english": "Influence in the back of the neck. No regret. The will is firm but does not reach outward — deep conviction without outer display. No effect on others, but no error either.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "咸其輔頰舌。",
+        "english": "Influence in the jaws, cheeks, and tongue. Mere talk. Influence that reaches only the surface — words without substance move no one. The shallowest form of connection.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "001",
+    "number": 31,
+    "pinyin": "Xián",
+    "upper_trigram": "110"
+  },
+  {
+    "binary": "011100",
+    "chinese": "恆",
+    "english": "Duration",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "雷風，恆。君子以立不易方。",
+      "english": "Thunder and wind: Duration. The superior person stands firm and does not change direction. Not stubbornness but constancy — knowing one's axis and holding to it while everything else moves."
+    },
+    "judgment": {
+      "chinese": "恆，亨，無咎，利貞。利有攸往。",
+      "english": "Duration. Success. No blame. Persistence is favorable. It is favorable to have somewhere to go. What endures is not rigid but consistent — thunder and wind, each reinforcing the other. Duration is not mere persistence but the living pattern that sustains itself through change."
+    },
+    "lines": [
+      {
+        "chinese": "浚恆，貞凶，無攸利。",
+        "english": "Seeking duration too deeply. Persistence brings misfortune. Nothing is favorable. Demanding permanence before anything has been established — digging too deep too fast undermines the foundation.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "悔亡。",
+        "english": "Regret vanishes. One finds the center and holds it. Duration at the right depth — neither forcing nor grasping.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "不恆其德，或承之羞，貞吝。",
+        "english": "Not giving duration to one's virtue. One may meet with disgrace. Persistence brings humiliation. Inconsistency of character — shifting with every wind — invites shame.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "田無禽。",
+        "english": "No game in the field. Seeking in the wrong place, no matter how persistently, yields nothing. Duration is not only about constancy of effort but rightness of direction.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "恆其德，貞。婦人吉，夫子凶。",
+        "english": "Giving duration to one's virtue. Persistence. For a wife, good fortune. For a husband, misfortune. Constant devotion to a fixed role serves one position but constrains another. Duration must be adapted to one's actual situation.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "振恆，凶。",
+        "english": "Restless duration. Misfortune. Agitation sustained indefinitely — the form of constancy without its substance. Movement without stillness exhausts itself.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "011",
+    "number": 32,
+    "pinyin": "Héng",
+    "upper_trigram": "100"
+  },
+  {
+    "binary": "001111",
+    "chinese": "遯",
+    "english": "Retreat",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "天下有山，遯。君子以遠小人，不惡而嚴。",
+      "english": "Heaven above the mountain: the image of Retreat. The noble one keeps distance from the petty — not with hostility, but with dignity."
+    },
+    "judgment": {
+      "chinese": "遯，亨。小利貞。",
+      "english": "Retreat brings success. In small matters it is favorable to persist."
+    },
+    "lines": [
+      {
+        "chinese": "遯尾，厲。勿用有攸往。",
+        "english": "At the tail of the retreat — danger. Do not undertake anything.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "執之用黃牛之革，莫之勝說。",
+        "english": "Held fast with yellow oxhide — no one can loosen it.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "係遯，有疾厲。畜臣妾吉。",
+        "english": "A bound retreat — illness and danger. Keeping servants and attendants brings good fortune.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "好遯，君子吉，小人否。",
+        "english": "A graceful retreat. Good fortune for the noble one; the petty one cannot manage it.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "嘉遯，貞吉。",
+        "english": "An admirable retreat. Perseverance brings good fortune.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "肥遯，無不利。",
+        "english": "A rich retreat — nothing that does not further.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "001",
+    "number": 33,
+    "pinyin": "Dùn",
+    "upper_trigram": "111"
+  },
+  {
+    "binary": "111100",
+    "chinese": "大壯",
+    "english": "Great Power",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "雷在天上，大壯。君子以非禮弗履。",
+      "english": "Thunder above heaven: the image of Great Power. The noble one does not tread where propriety does not reach."
+    },
+    "judgment": {
+      "chinese": "大壯，利貞。",
+      "english": "Great Power. It is favorable to persevere."
+    },
+    "lines": [
+      {
+        "chinese": "壯于趾，征凶，有孚。",
+        "english": "Power in the toes. To advance brings misfortune. Have confidence in this.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "貞吉。",
+        "english": "Perseverance brings good fortune.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "小人用壯，君子用罔。貞厲。羝羊觸藩，羸其角。",
+        "english": "The petty one uses force; the noble one does not. Perseverance brings danger. A ram butts against a hedge and gets its horns entangled.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "貞吉，悔亡。藩決不羸，壯于大輿之輹。",
+        "english": "Perseverance brings good fortune, remorse vanishes. The hedge opens and there is no entanglement — power like a great wagon's axle.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "喪羊于易，無悔。",
+        "english": "Loses the ram with ease. No remorse.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "羝羊觸藩，不能退，不能遂。無攸利，艱則吉。",
+        "english": "A ram butts against a hedge — cannot retreat, cannot advance. Nothing furthers. Difficulty brings good fortune.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "111",
+    "number": 34,
+    "pinyin": "Dà Zhuàng",
+    "upper_trigram": "100"
+  },
+  {
+    "binary": "000101",
+    "chinese": "晉",
+    "english": "Progress",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "明出地上，晉。君子以自昭明德。",
+      "english": "Fire rising above the earth: the image of Progress. The noble one brightens their own luminous virtue."
+    },
+    "judgment": {
+      "chinese": "晉，康侯用錫馬蕃庶，晝日三接。",
+      "english": "Progress. The powerful prince is honored with horses in great number. In a single day he is received three times."
+    },
+    "lines": [
+      {
+        "chinese": "晉如摧如，貞吉。罔孚，裕，無咎。",
+        "english": "Progressing yet checked. Perseverance brings good fortune. If met with no trust, remain generous — no blame.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "晉如愁如，貞吉。受茲介福于其王母。",
+        "english": "Progressing yet sorrowful. Perseverance brings good fortune. One receives great blessings from the grandmother.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "眾允，悔亡。",
+        "english": "All trust in you. Remorse vanishes.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "晉如鼫鼠，貞厲。",
+        "english": "Progressing like a hamster — hoarding. Perseverance brings danger.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "悔亡。失得勿恤，往吉，無不利。",
+        "english": "Remorse vanishes. Let go of concern over gain and loss. To advance is fortunate — nothing that does not further.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "晉其角，維用伐邑，厲吉，無咎，貞吝。",
+        "english": "Advancing with the horns — used only to punish one's own city. Danger, but good fortune. No blame, yet perseverance brings humiliation.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "000",
+    "number": 35,
+    "pinyin": "Jìn",
+    "upper_trigram": "101"
+  },
+  {
+    "binary": "101000",
+    "chinese": "明夷",
+    "english": "Darkening of the Light",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "明入地中，明夷。君子以蒞眾，用晦而明。",
+      "english": "Light sinking into the earth: the image of Darkening of the Light. The noble one, in governing the many, veils their brightness yet remains luminous within."
+    },
+    "judgment": {
+      "chinese": "明夷，利艱貞。",
+      "english": "Darkening of the Light. In adversity it is favorable to persevere."
+    },
+    "lines": [
+      {
+        "chinese": "明夷于飛，垂其翼。君子于行，三日不食。有攸往，主人有言。",
+        "english": "The light is wounded in flight, drooping its wings. The noble one on a journey goes three days without eating. Where one goes, the host has words of complaint.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "明夷，夷于左股，用拯馬壯，吉。",
+        "english": "Darkening of the light — wounded in the left thigh. Rescue comes with the strength of a horse. Good fortune.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "明夷于南狩，得其大首，不可疾貞。",
+        "english": "Darkening of the light on the southern hunt. The great leader is captured. One must not expect too hasty a correction.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "入于左腹，獲明夷之心，于出門庭。",
+        "english": "Entering the left side of the belly, one grasps the heart of the darkening, and passes out through gate and courtyard.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "箕子之明夷，利貞。",
+        "english": "The darkening of the light as with Prince Ji. Favorable to persevere.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "不明晦，初登于天，後入于地。",
+        "english": "Not light but darkness. First ascending to heaven, then plunging into the earth.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "101",
+    "number": 36,
+    "pinyin": "Míng Yí",
+    "upper_trigram": "000"
+  },
+  {
+    "binary": "101011",
+    "chinese": "家人",
+    "english": "The Family",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "風自火出，家人。君子以言有物而行有恆。",
+      "english": "Wind coming forth from fire: the image of The Family. The noble one ensures that words have substance and conduct has constancy."
+    },
+    "judgment": {
+      "chinese": "家人，利女貞。",
+      "english": "The Family. It is favorable for the woman to persevere."
+    },
+    "lines": [
+      {
+        "chinese": "閑有家，悔亡。",
+        "english": "Firm boundaries within the household. Remorse vanishes.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "無攸遂，在中饋，貞吉。",
+        "english": "Nothing to pursue outward — attend to nourishment within. Perseverance brings good fortune.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "家人嗃嗃，悔厲，吉。婦子嘻嘻，終吝。",
+        "english": "When the family is governed with severity — remorse and danger, but good fortune. When women and children laugh and chatter carelessly, the end brings humiliation.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "富家，大吉。",
+        "english": "An enriched household. Great good fortune.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "王假有家，勿恤，吉。",
+        "english": "The king approaches the family. Do not worry — good fortune.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "有孚威如，終吉。",
+        "english": "Sincerity and dignity. Good fortune in the end.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "101",
+    "number": 37,
+    "pinyin": "Jiā Rén",
+    "upper_trigram": "011"
+  },
+  {
+    "binary": "110101",
+    "chinese": "睽",
+    "english": "Opposition",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "上火下澤，睽。君子以同而異。",
+      "english": "Fire above, lake below: the image of Opposition. The noble one maintains individuality within unity."
+    },
+    "judgment": {
+      "chinese": "睽，小事吉。",
+      "english": "Opposition. In small matters, good fortune."
+    },
+    "lines": [
+      {
+        "chinese": "悔亡。喪馬勿逐，自復。見惡人，無咎。",
+        "english": "Remorse vanishes. If you lose your horse, do not chase it — it will return on its own. Seeing disagreeable people brings no blame.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "遇主于巷，無咎。",
+        "english": "Meeting the master in a narrow lane. No blame.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "見輿曳，其牛掣，其人天且劓。無初有終。",
+        "english": "One sees the wagon dragged back, the oxen halted, the person marked with branding and nose-cutting. No beginning, but an end.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "睽孤，遇元夫，交孚，厲，無咎。",
+        "english": "Isolated in opposition, one meets a kindred spirit. Though the bond is forged in danger — no blame.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "悔亡。厥宗噬膚，往何咎。",
+        "english": "Remorse vanishes. The companion bites through the wrapping. To go — what blame?",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "睽孤，見豕負塗，載鬼一車。先張之弧，後說之弧。匪寇婚媾，往遇雨則吉。",
+        "english": "Isolated in opposition: one sees a pig covered in mud, a wagon full of ghosts. First one draws the bow, then lowers it. Not robbers but suitors. Going forth, one meets rain — then good fortune.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "110",
+    "number": 38,
+    "pinyin": "Kuí",
+    "upper_trigram": "101"
+  },
+  {
+    "binary": "001010",
+    "chinese": "蹇",
+    "english": "Obstruction",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "山上有水，蹇。君子以反身修德。",
+      "english": "Water upon the mountain: the image of Obstruction. The noble one turns inward to cultivate virtue."
+    },
+    "judgment": {
+      "chinese": "蹇，利西南，不利東北。利見大人，貞吉。",
+      "english": "Obstruction. The southwest is favorable; the northeast is not. It is favorable to see the great person. Perseverance brings good fortune."
+    },
+    "lines": [
+      {
+        "chinese": "往蹇來譽。",
+        "english": "Going leads to obstruction; returning brings praise.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "王臣蹇蹇，匪躬之故。",
+        "english": "The king's minister encounters obstruction upon obstruction — not for personal reasons.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "往蹇來反。",
+        "english": "Going leads to obstruction; returning brings turning back.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "往蹇來連。",
+        "english": "Going leads to obstruction; returning brings connection.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "大蹇朋來。",
+        "english": "In great obstruction, companions come.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "往蹇來碩，吉。利見大人。",
+        "english": "Going leads to obstruction; returning brings abundance — good fortune. It is favorable to see the great person.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "001",
+    "number": 39,
+    "pinyin": "Jiǎn",
+    "upper_trigram": "010"
+  },
+  {
+    "binary": "010100",
+    "chinese": "解",
+    "english": "Deliverance",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "雷雨作，解。君子以赦過宥罪。",
+      "english": "Thunder and rain arise: the image of Deliverance. The noble one pardons mistakes and forgives offenses."
+    },
+    "judgment": {
+      "chinese": "解，利西南。無所往，其來復吉。有攸往，夙吉。",
+      "english": "Deliverance. The southwest is favorable. If there is nowhere to go, returning brings good fortune. If there is somewhere to go, going quickly brings good fortune."
+    },
+    "lines": [
+      {
+        "chinese": "無咎。",
+        "english": "No blame.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "田獲三狐，得黃矢，貞吉。",
+        "english": "In the field one catches three foxes and obtains a yellow arrow. Perseverance brings good fortune.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "負且乘，致寇至，貞吝。",
+        "english": "Carrying a burden while riding in a carriage — this invites robbers. Perseverance brings humiliation.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "解而拇，朋至斯孚。",
+        "english": "Free yourself from your big toe — then companions arrive and trust is established.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "君子維有解，吉。有孚于小人。",
+        "english": "The noble one achieves deliverance — good fortune. This demonstrates sincerity even to the petty.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "公用射隼于高墉之上，獲之，無不利。",
+        "english": "The prince shoots a hawk on a high wall and brings it down. Nothing that does not further.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "010",
+    "number": 40,
+    "pinyin": "Xiè",
+    "upper_trigram": "100"
+  },
+  {
+    "binary": "110001",
+    "chinese": "損",
+    "english": "Decrease",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "山下有澤，損。君子以懲忿窒慾。",
+      "english": "The lake at the foot of the mountain: the image of Decrease. The noble one restrains anger and curbs desire."
+    },
+    "judgment": {
+      "chinese": "損，有孚，元吉，無咎，可貞，利有攸往。曷之用？二簋可用享。",
+      "english": "Decrease with sincerity — supreme good fortune, no blame, one may persevere, it is favorable to undertake something. How is this to be carried out? Two small bowls may be used for the offering."
+    },
+    "lines": [
+      {
+        "chinese": "已事遄往，無咎。酌損之。",
+        "english": "When your own tasks are finished, go quickly — no blame. But weigh carefully how much to decrease.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "利貞，征凶。弗損益之。",
+        "english": "Favorable to persevere. To advance brings misfortune. Without decreasing oneself, one can increase others.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "三人行則損一人，一人行則得其友。",
+        "english": "When three walk together, one is diminished. When one walks alone, one finds a companion.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "損其疾，使遄有喜，無咎。",
+        "english": "Decreasing one's faults, causing swift joy — no blame.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "或益之十朋之龜，弗克違。元吉。",
+        "english": "Someone increases this with a tortoise shell worth ten pairs. One cannot refuse. Supreme good fortune.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "弗損益之，無咎，貞吉，利有攸往。得臣無家。",
+        "english": "Without decreasing, one increases — no blame, perseverance brings good fortune, favorable to undertake something. One gains servants but no longer has a separate household.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "110",
+    "number": 41,
+    "pinyin": "Sǔn",
+    "upper_trigram": "001"
+  },
+  {
+    "binary": "100011",
+    "chinese": "益",
+    "english": "Increase",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "風雷，益。君子以見善則遷，有過則改。",
+      "english": "Wind and thunder: the image of Increase. The noble one, seeing good, moves toward it; having faults, corrects them."
+    },
+    "judgment": {
+      "chinese": "益，利有攸往，利涉大川。",
+      "english": "Increase. It is favorable to undertake something. It is favorable to cross the great water."
+    },
+    "lines": [
+      {
+        "chinese": "利用為大作，元吉，無咎。",
+        "english": "It is favorable to accomplish great deeds. Supreme good fortune, no blame.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "或益之十朋之龜，弗克違，永貞吉。王用享于帝，吉。",
+        "english": "Someone increases this with a tortoise shell worth ten pairs — one cannot refuse. Eternal perseverance brings good fortune. The king makes offerings to the supreme being — good fortune.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "益之用凶事，無咎。有孚中行，告公用圭。",
+        "english": "Increased through unfortunate events — no blame. With sincerity and a middle course, report to the prince with the jade tablet.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "中行，告公從，利用為依遷國。",
+        "english": "Walking the middle path, report to the prince and he will follow. It is favorable to be relied upon in moving the capital.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "有孚惠心，勿問元吉。有孚惠我德。",
+        "english": "With sincerity and a benevolent heart — do not ask, supreme good fortune. With sincerity, others recognize one's virtue.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "莫益之，或擊之。立心勿恆，凶。",
+        "english": "No one increases this — some strike at it. If the heart is not constant, misfortune.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "100",
+    "number": 42,
+    "pinyin": "Yì",
+    "upper_trigram": "011"
+  },
+  {
+    "binary": "111110",
+    "chinese": "夬",
+    "english": "Breakthrough",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "澤上于天，夬。君子以施祿及下，居德則忌。",
+      "english": "The lake risen to heaven: the image of Breakthrough. The noble one distributes blessings downward and refrains from resting on virtue."
+    },
+    "judgment": {
+      "chinese": "夬，揚于王庭，孚號有厲。告自邑，不利即戎。利有攸往。",
+      "english": "Breakthrough. It must be proclaimed in the king's court. With sincerity one must cry out in warning — there is danger. Announce from one's own city. It is not favorable to take up arms. It is favorable to undertake something."
+    },
+    "lines": [
+      {
+        "chinese": "壯于前趾，往不勝，為咎。",
+        "english": "Mighty in the advancing toes. To go forth without mastery brings blame.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "惕號，莫夜有戎，勿恤。",
+        "english": "A cry of alarm — weapons at night. Do not worry.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "壯于頄，有凶。君子夬夬，獨行遇雨，若濡有慍，無咎。",
+        "english": "Might in the cheekbones — misfortune. The noble one resolutely resolves. Walking alone, one meets rain and gets wet — annoyance, but no blame.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "臀無膚，其行次且。牽羊悔亡，聞言不信。",
+        "english": "No skin on the buttocks — one walks haltingly. Leading a sheep, remorse vanishes. But hearing these words, one does not believe them.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "莧陸夬夬，中行無咎。",
+        "english": "The goosefoot weed must be resolutely uprooted. Walking the middle path — no blame.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "無號，終有凶。",
+        "english": "No cry of warning. In the end, misfortune.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "111",
+    "number": 43,
+    "pinyin": "Guài",
+    "upper_trigram": "110"
+  },
+  {
+    "binary": "011111",
+    "chinese": "姤",
+    "english": "Coming to Meet",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "天下有風，姤。后以施命誥四方。",
+      "english": "Wind beneath heaven: the image of Coming to Meet. The ruler issues commands and proclaims them to the four quarters."
+    },
+    "judgment": {
+      "chinese": "姤，女壯，勿用取女。",
+      "english": "Coming to Meet. The woman is powerful. Do not marry such a woman."
+    },
+    "lines": [
+      {
+        "chinese": "繫于金柅，貞吉。有攸往，見凶。羸豕孚蹢躅。",
+        "english": "Checked with a bronze brake — perseverance brings good fortune. If one goes anywhere, one sees misfortune. A lean pig thrashes about in its bonds.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "包有魚，無咎，不利賓。",
+        "english": "A fish in the wrapping. No blame, but not favorable for guests.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "臀無膚，其行次且，厲，無大咎。",
+        "english": "No skin on the buttocks — one walks haltingly. Danger, but no great blame.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "包無魚，起凶。",
+        "english": "No fish in the wrapping. Misfortune arises.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "以杞包瓜，含章，有隕自天。",
+        "english": "A melon wrapped in willow leaves. Hidden brilliance — something falls from heaven.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "姤其角，吝，無咎。",
+        "english": "Coming to meet at the horns. Humiliation, but no blame.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "011",
+    "number": 44,
+    "pinyin": "Gòu",
+    "upper_trigram": "111"
+  },
+  {
+    "binary": "000110",
+    "chinese": "萃",
+    "english": "Gathering Together",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "澤上于地，萃。君子以除戎器，戒不虞。",
+      "english": "The lake risen above the earth: the image of Gathering Together. The noble one renews weapons and stays alert against the unforeseen."
+    },
+    "judgment": {
+      "chinese": "萃，亨。王假有廟，利見大人，亨，利貞。用大牲吉，利有攸往。",
+      "english": "Gathering Together brings success. The king approaches the temple. It is favorable to see the great person — success. Favorable to persevere. Using great offerings brings good fortune. It is favorable to undertake something."
+    },
+    "lines": [
+      {
+        "chinese": "有孚不終，乃亂乃萃。若號，一握為笑，勿恤，往無咎。",
+        "english": "Sincerity that does not last — now disorder, now gathering. If you call out, one handclasp turns tears to laughter. Do not worry; to go brings no blame.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "引吉，無咎。孚乃利用禴。",
+        "english": "Being drawn forward brings good fortune — no blame. With sincerity, even a small spring offering is acceptable.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "萃如嗟如，無攸利。往無咎，小吝。",
+        "english": "Gathering yet sighing — nothing furthers. To go brings no blame, but slight humiliation.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "大吉，無咎。",
+        "english": "Great good fortune. No blame.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "萃有位，無咎。匪孚，元永貞，悔亡。",
+        "english": "Gathering in one's rightful place — no blame. If there are those who do not yet trust, through supreme and lasting perseverance, remorse vanishes.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "齎咨涕洟，無咎。",
+        "english": "Sighing and weeping and tears — but no blame.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "000",
+    "number": 45,
+    "pinyin": "Cuì",
+    "upper_trigram": "110"
+  },
+  {
+    "binary": "011000",
+    "chinese": "升",
+    "english": "Pushing Upward",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "地中生木，升。君子以順德，積小以高大。",
+      "english": "Wood grows within the earth: the image of Pushing Upward. The noble one, following virtue, accumulates small things to achieve something great."
+    },
+    "judgment": {
+      "chinese": "升，元亨。用見大人，勿恤。南征吉。",
+      "english": "Pushing Upward brings supreme success. One must see the great person — do not worry. An expedition to the south brings good fortune."
+    },
+    "lines": [
+      {
+        "chinese": "允升，大吉。",
+        "english": "Pushing upward with confidence. Great good fortune.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "孚乃利用禴，無咎。",
+        "english": "With sincerity, even a small spring offering is acceptable. No blame.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "升虛邑。",
+        "english": "Pushing upward into an empty city.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "王用亨于岐山，吉，無咎。",
+        "english": "The king makes offerings on Mount Qi. Good fortune, no blame.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "貞吉，升階。",
+        "english": "Perseverance brings good fortune. Ascending the stairs.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "冥升，利于不息之貞。",
+        "english": "Pushing upward in darkness. It is favorable to persevere without rest.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "011",
+    "number": 46,
+    "pinyin": "Shēng",
+    "upper_trigram": "000"
+  },
+  {
+    "binary": "010110",
+    "chinese": "困",
+    "english": "Oppression",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "澤無水，困。君子以致命遂志。",
+      "english": "The lake with no water: the image of Oppression. The noble one stakes life itself to follow the will."
+    },
+    "judgment": {
+      "chinese": "困，亨，貞，大人吉，無咎。有言不信。",
+      "english": "Oppression brings success. Perseverance. The great person finds good fortune — no blame. But words are not believed."
+    },
+    "lines": [
+      {
+        "chinese": "臀困于株木，入于幽谷，三歲不覿。",
+        "english": "Buttocks oppressed by a tree stump, entering a dark valley — for three years one sees nothing.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "困于酒食，朱紱方來，利用享祀。征凶，無咎。",
+        "english": "Oppressed amid wine and food. The scarlet sash is coming. It is favorable to make offerings. To advance brings misfortune, but no blame.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "困于石，據于蒺藜，入其宮不見其妻，凶。",
+        "english": "Oppressed by stone, leaning on thorns. One enters the house but does not see the wife. Misfortune.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "來徐徐，困于金車，吝，有終。",
+        "english": "Coming slowly, oppressed by the golden carriage. Humiliation, but there is a conclusion.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "劓刖，困于赤紱，乃徐有說，利用祭祀。",
+        "english": "Nose and feet cut off — oppressed by those in scarlet sashes. Slowly, release comes. It is favorable to make offerings.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "困于葛藟，于臲卼，曰動悔。有悔，征吉。",
+        "english": "Oppressed by creeping vines, in a precarious position, one says \"movement brings remorse.\" But having remorse and then advancing brings good fortune.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "010",
+    "number": 47,
+    "pinyin": "Kùn",
+    "upper_trigram": "110"
+  },
+  {
+    "binary": "011010",
+    "chinese": "井",
+    "english": "The Well",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "木上有水，井。君子以勞民勸相。",
+      "english": "Water over wood: the image of The Well. The noble one encourages the people and urges them to mutual help."
+    },
+    "judgment": {
+      "chinese": "井，改邑不改井，無喪無得，往來井井。汔至亦未繘井，羸其瓶，凶。",
+      "english": "The Well. The town may be changed, but the well cannot be changed. Nothing is lost, nothing is gained. They come and go, drawing from the well. If the rope almost reaches the water but the jug breaks — misfortune."
+    },
+    "lines": [
+      {
+        "chinese": "井泥不食，舊井無禽。",
+        "english": "The mud of the well is not drunk. At an old well, no creatures gather.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "井谷射鮒，甕敝漏。",
+        "english": "The well valley — one shoots fish. The jug is broken and leaks.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "井渫不食，為我心惻。可用汲，王明，並受其福。",
+        "english": "The well is cleaned but no one drinks — this makes the heart ache. It could be drawn from. If the king were clear-sighted, all would share the blessing.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "井甃，無咎。",
+        "english": "The well is being lined with stone. No blame.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "井冽，寒泉食。",
+        "english": "The well is clear — a cold spring, and one drinks.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "井收勿幕，有孚元吉。",
+        "english": "The well is drawn from, uncovered. With sincerity — supreme good fortune.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "011",
+    "number": 48,
+    "pinyin": "Jǐng",
+    "upper_trigram": "010"
+  },
+  {
+    "binary": "101110",
+    "chinese": "革",
+    "english": "Revolution",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "澤中有火，革。君子以治曆明時。",
+      "english": "Fire within the lake: Revolution. The noble one sets the calendar in order and makes the seasons clear. When elements conflict, transformation is inevitable — the task is to align it with the right timing."
+    },
+    "judgment": {
+      "chinese": "革：己日乃孚，元亨，利貞，悔亡。",
+      "english": "Revolution. On one's own day one is believed. Supreme success. Furthering through perseverance. Remorse disappears. When the time for change has truly come, people trust it. What must be shed is shed."
+    },
+    "lines": [
+      {
+        "chinese": "初九：鞏用黃牛之革。",
+        "english": "Bound with the hide of a yellow ox. At the beginning, one is not yet ready to act. Strengthen resolve; do not move prematurely.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：己日乃革之，征吉，無咎。",
+        "english": "When one's own day comes, then carry out the revolution. Advancing brings good fortune. No blame. The time is right.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：征凶，貞厲。革言三就，有孚。",
+        "english": "Advancing brings misfortune. Perseverance is dangerous. When talk of revolution has been discussed three times and trust is established, then act.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：悔亡，有孚改命，吉。",
+        "english": "Remorse disappears. There is trust. Changing the mandate brings good fortune. The revolution has inner authority.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：大人虎變，未占有孚。",
+        "english": "The great person transforms like a tiger. Before divination, trust is already present. The change is so clear in its patterning that no question remains.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：君子豹變，小人革面。征凶，居貞吉。",
+        "english": "The noble one transforms like a leopard. Lesser people change their outward appearance. Advancing brings misfortune. Remaining in perseverance brings good fortune.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "101",
+    "number": 49,
+    "pinyin": "Gé",
+    "upper_trigram": "110"
+  },
+  {
+    "binary": "011101",
+    "chinese": "鼎",
+    "english": "The Cauldron",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "木上有火，鼎。君子以正位凝命。",
+      "english": "Fire over wood: The Cauldron. The noble one rectifies their position and makes firm their destiny. The vessel holds its shape so that transformation can occur within it."
+    },
+    "judgment": {
+      "chinese": "鼎：元吉，亨。",
+      "english": "The Cauldron. Supreme good fortune. Success. The vessel that holds the offering and transforms the raw into the nourishing. A form dedicated to sacred purpose."
+    },
+    "lines": [
+      {
+        "chinese": "初六：鼎顛趾，利出否。得妾以其子，無咎。",
+        "english": "The cauldron is overturned on its legs. It is favorable to remove what has stagnated. One takes a concubine for the sake of her son. No blame. Emptying what is old to receive what is new.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：鼎有實，我仇有疾，不我能即，吉。",
+        "english": "The cauldron has substance in it. My companion is afflicted but cannot reach me. Good fortune. When one is full of real content, envy cannot touch it.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：鼎耳革，其行塞，雉膏不食，方雨虧悔，終吉。",
+        "english": "The handles of the cauldron are changed; its movement is obstructed. The fat of the pheasant goes uneaten. When rain comes, remorse diminishes. Good fortune in the end.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：鼎折足，覆公餗，其形渥，凶。",
+        "english": "The cauldron breaks its legs. The duke's meal is spilled. His form is soiled. Misfortune. The vessel was not strong enough for what it was asked to hold.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：鼎黃耳金鉉，利貞。",
+        "english": "The cauldron has yellow handles and a golden carrying bar. Perseverance is favorable. The vessel is well-fitted and properly accessible — modesty in a high place.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：鼎玉鉉，大吉，無不利。",
+        "english": "The cauldron has a jade carrying bar. Great good fortune. Nothing that is not favorable. The highest refinement of the vessel — what is sacred is handled with what is precious.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "011",
+    "number": 50,
+    "pinyin": "Dǐng",
+    "upper_trigram": "101"
+  },
+  {
+    "binary": "100100",
+    "chinese": "震",
+    "english": "The Arousing",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "洊雷，震。君子以恐懼修省。",
+      "english": "Repeated thunder: The Arousing. The noble one, through fear and trembling, sets things in order and examines the self. Shock is an occasion for self-correction, not collapse."
+    },
+    "judgment": {
+      "chinese": "震：亨。震來虩虩，笑言啞啞。震驚百里，不喪匕鬯。",
+      "english": "The Arousing. Success. Shock comes — terror, terror. Then laughing words — ha, ha. The shock frightens for a hundred miles, but one does not drop the sacrificial spoon and chalice. The one who meets the tremor with composure keeps hold of what matters."
+    },
+    "lines": [
+      {
+        "chinese": "初九：震來虩虩，後笑言啞啞，吉。",
+        "english": "Shock comes — terror, terror. Afterward, laughing words — ha, ha. Good fortune. The initial fright passes and composure returns.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：震來厲，億喪貝，躋于九陵，勿逐，七日得。",
+        "english": "Shock comes — danger. One loses treasures in great number and must climb the nine hills. Do not pursue. In seven days they will be recovered.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：震蘇蘇，震行無眚。",
+        "english": "Shock comes and makes one distraught. If shock leads to action, there will be no fault. Let the agitation move you forward rather than freeze you.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：震遂泥。",
+        "english": "Shock sinks into the mud. The force of the shock is absorbed without effect. When there is no firm ground, even thunder cannot move things.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：震往來厲，億無喪，有事。",
+        "english": "Shock goes and comes — danger. Losses numbering in the tens of thousands, yet nothing is truly lost. There are affairs to attend to. Keep to the center and the real losses will not occur.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：震索索，視矍矍，征凶。震不于其躬，于其鄰，無咎。婚媾有言。",
+        "english": "Shock — Loss of composure, eyes darting wildly. Advancing brings misfortune. When the shock does not reach one's own person but only the neighbor, there is no blame. Talk of alliances brings complaint.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "100",
+    "number": 51,
+    "pinyin": "Zhèn",
+    "upper_trigram": "100"
+  },
+  {
+    "binary": "001001",
+    "chinese": "艮",
+    "english": "Keeping Still",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "兼山，艮。君子以思不出其位。",
+      "english": "Mountains standing close together: Keeping Still. The noble one does not let thoughts go beyond their proper situation. Each thing rests in its own place."
+    },
+    "judgment": {
+      "chinese": "艮其背，不獲其身，行其庭，不見其人，無咎。",
+      "english": "Keeping still one's back, one no longer feels the body. Walking in the courtyard, one does not see the people. No blame. Stillness so complete that self-consciousness dissolves. One rests in what is behind, not grasping at what is in front."
+    },
+    "lines": [
+      {
+        "chinese": "初六：艮其趾，無咎，利永貞。",
+        "english": "Keeping still one's toes. No blame. It is favorable to be constantly persevering. Stillness at the very beginning — before movement starts. This is the easiest place to stop.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：艮其腓，不拯其隨，其心不快。",
+        "english": "Keeping still one's calves. One cannot save the one who follows. The heart is not glad. One is held in place while others move — unable to help, unable to join. Discomfort without blame.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：艮其限，列其夤，厲薰心。",
+        "english": "Keeping still one's waist. The ribs are split apart. Danger. The heart smolders. Forced stillness at the point of division — the tension between upper and lower is unbearable.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：艮其身，無咎。",
+        "english": "Keeping still one's trunk. No blame. The whole body is at rest. This is stillness that encompasses the self without strain.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：艮其輔，言有序，悔亡。",
+        "english": "Keeping still one's jaws. Words come in proper order. Remorse disappears. When speech is restrained, what is said carries weight.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：敦艮，吉。",
+        "english": "Wholehearted keeping still. Good fortune. Stillness that is complete, generous, and sincere — not rigid but deeply settled.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "001",
+    "number": 52,
+    "pinyin": "Gèn",
+    "upper_trigram": "001"
+  },
+  {
+    "binary": "001011",
+    "chinese": "漸",
+    "english": "Development",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "山上有木，漸。君子以居賢德善俗。",
+      "english": "A tree on the mountain: Development. The noble one abides in dignity and virtue and improves the customs of the people. Growth that is slow, visible, and rooted."
+    },
+    "judgment": {
+      "chinese": "漸：女歸吉，利貞。",
+      "english": "Development. The maiden is given in marriage. Good fortune. Perseverance is favorable. Gradual progress. Each step follows naturally from the last. Nothing is forced or skipped."
+    },
+    "lines": [
+      {
+        "chinese": "初六：鴻漸于干，小子厲，有言，無咎。",
+        "english": "The wild goose gradually draws near the shore. The young son is in danger. There is talk. No blame. The first approach — uncertain, exposed, but blameless.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：鴻漸于磐，飲食衎衎，吉。",
+        "english": "The wild goose gradually draws near the cliff. Eating and drinking in peace and gladness. Good fortune. A secure resting place has been reached.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：鴻漸于陸，夫征不復，婦孕不育，凶。利禦寇。",
+        "english": "The wild goose gradually draws near the plateau. The husband goes on expedition and does not return. The wife is pregnant but does not give birth. Misfortune. It is favorable to resist marauders. Advance has gone too far from its base.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：鴻漸于木，或得其桷，無咎。",
+        "english": "The wild goose gradually draws near the tree. Perhaps it finds a flat branch. No blame. An unusual perch, but one manages to find a foothold.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：鴻漸于陵，婦三歲不孕，終莫之勝，吉。",
+        "english": "The wild goose gradually draws near the summit. For three years the wife has no child. In the end nothing can prevent it. Good fortune. What unfolds naturally cannot ultimately be obstructed.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：鴻漸于陸，其羽可用為儀，吉。",
+        "english": "The wild goose gradually draws near the high plateau. Its feathers can be used as ornaments. Good fortune. The journey is complete — what was lived becomes something beautiful and useful.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "001",
+    "number": 53,
+    "pinyin": "Jiàn",
+    "upper_trigram": "011"
+  },
+  {
+    "binary": "110100",
+    "chinese": "歸妹",
+    "english": "The Marrying Maiden",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "澤上有雷，歸妹。君子以永終知敝。",
+      "english": "Thunder over the lake: The Marrying Maiden. The noble one understands the transitory in light of the eternal. Recognize what will wear out. Endure through understanding, not through force."
+    },
+    "judgment": {
+      "chinese": "歸妹：征凶，無攸利。",
+      "english": "The Marrying Maiden. Undertakings bring misfortune. Nothing that is favorable. Entering a situation where one holds no real power. The arrangement is fixed; initiative within it will not succeed. One must accept a subordinate position."
+    },
+    "lines": [
+      {
+        "chinese": "初九：歸妹以娣，跛能履，征吉。",
+        "english": "The marrying maiden as a concubine. A lame person who can still walk. Undertakings bring good fortune. Even in a lesser position, one can act and move forward.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：眇能視，利幽人之貞。",
+        "english": "A one-eyed person who can still see. The perseverance of a solitary person is favorable. Limited sight, but clear enough. Loyalty in obscurity.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：歸妹以須，反歸以娣。",
+        "english": "The marrying maiden as a slave. She goes back and becomes a concubine. What was too low finds a better position — but only by returning and beginning again.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：歸妹愆期，遲歸有時。",
+        "english": "The marrying maiden draws out the allotted time. A late marriage comes in due course. The right moment has not yet arrived. Wait.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：帝乙歸妹，其君之袂不如其娣之袂良。月幾望，吉。",
+        "english": "Emperor Yi gives his daughter in marriage. The embroidered garments of the princess are not as fine as those of the serving maid. The moon is nearly full. Good fortune. True worth does not depend on display.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：女承筐無實，士刲羊無血，無攸利。",
+        "english": "The woman holds the basket, but it is empty. The man sacrifices the sheep, but no blood flows. Nothing is favorable. The forms are maintained but the substance is gone.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "110",
+    "number": 54,
+    "pinyin": "Guī Mèi",
+    "upper_trigram": "100"
+  },
+  {
+    "binary": "101100",
+    "chinese": "豐",
+    "english": "Abundance",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "雷電皆至，豐。君子以折獄致刑。",
+      "english": "Thunder and lightning both arrive: Abundance. The noble one decides lawsuits and carries out punishments. In times of fullness, clarity and decisive action are both possible and required."
+    },
+    "judgment": {
+      "chinese": "豐：亨，王假之，勿憂，宜日中。",
+      "english": "Abundance. Success. The king attains fullness. Do not be sorrowful. It is fitting to be like the sun at midday. Abundance does not last, but that is no reason to hold back from it. Be present at the peak."
+    },
+    "lines": [
+      {
+        "chinese": "初九：遇其配主，雖旬無咎，往有尚。",
+        "english": "Meeting one's destined ruler. Though they are equals for a full period, there is no blame. Going forward is praiseworthy. A partnership of matched strength at the right moment.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：豐其蔀，日中見斗，往得疑疾，有孚發若，吉。",
+        "english": "The curtain is of such fullness that the polestar can be seen at noon. Going forward invites mistrust and illness. If one rouses them through sincerity, good fortune. When abundance obscures, only truthfulness can penetrate.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：豐其沛，日中見沬，折其右肱，無咎。",
+        "english": "The underbrush is of such abundance that small stars are seen at noon. One breaks one's right arm. No blame. Darkness at the height of the day — one's capacity is limited. Accept it without forcing.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：豐其蔀，日中見斗，遇其夷主，吉。",
+        "english": "The curtain is of such fullness that the polestar can be seen at noon. One meets one's shadow ruler. Good fortune. In the darkness of excess, finding the complementary force brings light.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：來章，有慶譽，吉。",
+        "english": "Lines of beauty come. Blessing and fame draw near. Good fortune. By remaining open and receptive at the height of abundance, what is excellent arrives of its own accord.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：豐其屋，蔀其家，闚其戶，闃其無人，三歲不覿，凶。",
+        "english": "Abundance in the house — the family is screened off. Peering through the gate, it is still and empty. For three years no one is seen. Misfortune. Abundance that isolates is no abundance at all.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "101",
+    "number": 55,
+    "pinyin": "Fēng",
+    "upper_trigram": "100"
+  },
+  {
+    "binary": "001101",
+    "chinese": "旅",
+    "english": "The Wanderer",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "山上有火，旅。君子以明慎用刑而不留獄。",
+      "english": "Fire on the mountain: The Wanderer. The noble one is clear-minded and cautious in applying punishments, and does not prolong lawsuits. Fire on the mountain burns briefly and moves on. Act with clarity, then release."
+    },
+    "judgment": {
+      "chinese": "旅：小亨，旅貞吉。",
+      "english": "The Wanderer. Small success. Perseverance of the wanderer brings good fortune. The traveler cannot expect what the settled person has. Small, careful conduct — not grand ambition — is what serves."
+    },
+    "lines": [
+      {
+        "chinese": "初六：旅瑣瑣，斯其所取災。",
+        "english": "The wanderer busies himself with trivial things. This is how he draws disaster upon himself. Small-mindedness on the road invites misfortune.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：旅即次，懷其資，得童僕貞。",
+        "english": "The wanderer arrives at the inn. He carries his property with him. He gains the perseverance of a young servant. Finding shelter, keeping what one has, earning steady loyalty — enough.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：旅焚其次，喪其童僕，貞厲。",
+        "english": "The wanderer's inn burns down. He loses his young servant. Perseverance is dangerous. Harshness destroys the shelter one has found and drives away those who serve.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：旅于處，得其資斧，我心不快。",
+        "english": "The wanderer rests in a shelter. He obtains his property and an axe. My heart is not glad. One has means and tools but no true home. Security without belonging.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：射雉一矢亡，終以譽命。",
+        "english": "Shooting a pheasant — one arrow is lost. In the end one receives praise and appointment. Something is sacrificed in the offering, but what comes back is recognition and purpose.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：鳥焚其巢，旅人先笑後號啕。喪牛于易，凶。",
+        "english": "The bird burns its own nest. The wanderer first laughs, then cries and laments. One loses an ox at the border. Misfortune. Carelessness at the end destroys what was built along the way.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "001",
+    "number": 56,
+    "pinyin": "Lǚ",
+    "upper_trigram": "101"
+  },
+  {
+    "binary": "011011",
+    "chinese": "巽",
+    "english": "The Gentle",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "隨風，巽。君子以申命行事。",
+      "english": "Winds following one upon another: The Gentle. The noble one spreads commands abroad and carries out undertakings. Repeated gentle influence — not a single decree but a steady presence that permeates."
+    },
+    "judgment": {
+      "chinese": "巽：小亨，利有攸往，利見大人。",
+      "english": "The Gentle. Small success. It is favorable to have a direction to go. It is favorable to see the great person. Penetration through gentleness. Not force but persistence — wind that enters every crack."
+    },
+    "lines": [
+      {
+        "chinese": "初六：進退，利武人之貞。",
+        "english": "Advancing and retreating. The perseverance of a warrior is favorable. Indecision at the start — firmness of purpose must be chosen, or gentleness becomes weakness.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：巽在牀下，用史巫紛若，吉，無咎。",
+        "english": "The gentle wind penetrates under the bed. Using priests and diviners in great number. Good fortune. No blame. Going deeply beneath the surface. When hidden influences are at work, seek all available clarity.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：頻巽，吝。",
+        "english": "Repeated penetration. Humiliation. Too much yielding, too much deliberation — what should be gentle becomes abject.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：悔亡，田獲三品。",
+        "english": "Remorse disappears. In the hunt, three kinds of game are caught. Decisive action arising from patient preparation. The gentleness was not weakness — it was readiness.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：貞吉，悔亡，無不利。無初有終。先庚三日，後庚三日，吉。",
+        "english": "Perseverance brings good fortune. Remorse disappears. Nothing unfavorable. No beginning, but an end. Three days before the change, three days after: good fortune. What starts obscurely concludes well, if the timing is honored.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：巽在牀下，喪其資斧，貞凶。",
+        "english": "The gentle wind penetrates under the bed. One loses one's property and axe. Perseverance brings misfortune. Submission carried too far — one has given away the means to act.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "011",
+    "number": 57,
+    "pinyin": "Xùn",
+    "upper_trigram": "011"
+  },
+  {
+    "binary": "110110",
+    "chinese": "兌",
+    "english": "The Joyous",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "麗澤，兌。君子以朋友講習。",
+      "english": "Lakes resting one upon the other: The Joyous. The noble one joins with friends for discussion and practice. Joy that deepens through exchange — learning shared is joy doubled."
+    },
+    "judgment": {
+      "chinese": "兌：亨，利貞。",
+      "english": "The Joyous. Success. Perseverance is favorable. True joy — not indulgence but the open expression that comes from inner strength. The lake is open above, firm below."
+    },
+    "lines": [
+      {
+        "chinese": "初九：和兌，吉。",
+        "english": "Contented joyousness. Good fortune. Joy without ulterior motive. Harmony that asks for nothing.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：孚兌，吉，悔亡。",
+        "english": "Sincere joyousness. Good fortune. Remorse disappears. Joy grounded in truthfulness — no need for empty pleasures when the real thing is present.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：來兌，凶。",
+        "english": "Approaching joyousness. Misfortune. Joy sought from without. When one comes looking for it, it is already not the real thing.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：商兌未寧，介疾有喜。",
+        "english": "Joyousness that is weighed and considered is not yet at peace. But by warding off what is unwholesome, there is gladness. Choosing between higher and lower pleasures — the discomfort of discernment leads to real joy.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：孚于剝，有厲。",
+        "english": "Trust in what is destructive. There is danger. Even in a time of joy, one must recognize what erodes. Sincerity directed toward what strips away brings peril.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：引兌。",
+        "english": "Seductive joyousness. Joy that lures, that draws others in. No judgment is given — the outcome depends entirely on what one is being drawn toward.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "110",
+    "number": 58,
+    "pinyin": "Duì",
+    "upper_trigram": "110"
+  },
+  {
+    "binary": "010011",
+    "chinese": "渙",
+    "english": "Dispersion",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "風行水上，渙。先王以享于帝立廟。",
+      "english": "Wind blowing over water: Dispersion. The ancient kings made offerings to the Lord on High and built temples. In times of dissolution, the sacred gathering point holds things together. What unites must be higher than what divides."
+    },
+    "judgment": {
+      "chinese": "渙：亨。王假有廟，利涉大川，利貞。",
+      "english": "Dispersion. Success. The king approaches his ancestral temple. It is favorable to cross the great water. Perseverance is favorable. What has hardened must be dissolved. The wind over the water scatters what has frozen — rigidity gives way to flow."
+    },
+    "lines": [
+      {
+        "chinese": "初六：用拯馬壯，吉。",
+        "english": "Rescue is carried out with the strength of a horse. Good fortune. Act swiftly at the first sign of dissolution. Early intervention with vigor succeeds.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：渙奔其機，悔亡。",
+        "english": "At the dissolution, one runs to one's support. Remorse disappears. When things scatter, go to what is solid. Find the foundation beneath the dispersion.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：渙其躬，無悔。",
+        "english": "Dissolving the self. No remorse. Letting go of personal concerns so that the larger work can proceed. Self-forgetting in service of what matters.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：渙其群，元吉。渙有丘，匪夷所思。",
+        "english": "Dissolving the group. Supreme good fortune. Dissolution leads to accumulation — what scatters from the smaller gathers into the larger. Something beyond ordinary thinking.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：渙汗其大號，渙王居，無咎。",
+        "english": "Dissolution — sweat pours during the great proclamation. Dissolution of the king's stores. No blame. In crisis, the leader gives freely of what has been held. The reserves exist for this moment.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：渙其血，去逖出，無咎。",
+        "english": "Dissolving one's blood — departing, keeping at a distance, going out. No blame. Withdrawing from what is harmful. Dissolution here means escape from danger.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "010",
+    "number": 59,
+    "pinyin": "Huàn",
+    "upper_trigram": "011"
+  },
+  {
+    "binary": "110010",
+    "chinese": "節",
+    "english": "Limitation",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "澤上有水，節。君子以制數度，議德行。",
+      "english": "Water over the lake: Limitation. The noble one creates number and measure, and deliberates upon virtue and conduct. Limits must be considered, calibrated — not imposed arbitrarily."
+    },
+    "judgment": {
+      "chinese": "節：亨。苦節不可貞。",
+      "english": "Limitation. Success. But bitter limitation must not be persevered in. Limits give shape — the lake can hold water because it has banks. But limitation that is harsh and joyless defeats its own purpose."
+    },
+    "lines": [
+      {
+        "chinese": "初九：不出戶庭，無咎。",
+        "english": "Not going out of the door and courtyard. No blame. Knowing when to stay within bounds. The beginning is a time for restraint, not exploration.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：不出門庭，凶。",
+        "english": "Not going out of the gate and courtyard. Misfortune. The same restraint that was right at first becomes wrong when the moment calls for action. Missing the time is the real failure.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：不節若，則嗟若，無咎。",
+        "english": "If one does not limit oneself, one will have cause to lament. No blame. Recognizing excess after the fact — the regret itself becomes the teacher.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：安節，亨。",
+        "english": "Contented limitation. Success. Limits that are accepted naturally, without strain. The shape fits what it contains.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：甘節，吉，往有尚。",
+        "english": "Sweet limitation. Good fortune. Going forward is praiseworthy. Limitation applied to oneself first, and generously. This kind of measure earns trust and opens the way.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：苦節，貞凶，悔亡。",
+        "english": "Bitter limitation. Perseverance brings misfortune. Remorse disappears. Severity taken too far. Even though remorse fades — because one was sincere — the harshness still does harm.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "110",
+    "number": 60,
+    "pinyin": "Jié",
+    "upper_trigram": "010"
+  },
+  {
+    "binary": "110011",
+    "chinese": "中孚",
+    "english": "Inner Truth",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "澤上有風，中孚。君子以議獄緩死。",
+      "english": "Wind over the lake: Inner Truth. The noble one deliberates over criminal cases and delays executions. When inner truth guides judgment, one pauses before the irreversible. Sincerity requires patience."
+    },
+    "judgment": {
+      "chinese": "中孚：豚魚吉，利涉大川，利貞。",
+      "english": "Inner Truth. Even pigs and fish are moved. Good fortune. It is favorable to cross the great water. Perseverance is favorable. Sincerity so deep it reaches even the most insensible. The inner being is empty and receptive — truth resonates from the center outward."
+    },
+    "lines": [
+      {
+        "chinese": "初九：虞吉，有他不燕。",
+        "english": "Being prepared brings good fortune. If there are secret designs, there is no peace. Inner truth depends on single-mindedness. Divided attention destroys sincerity.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：鶴鳴在陰，其子和之。我有好爵，吾與爾靡之。",
+        "english": "A crane calling in the shade — its young answers it. I have a fine goblet; I will share it with you. What is genuine calls forth a genuine response. Resonance without contrivance.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：得敵，或鼓或罷，或泣或歌。",
+        "english": "Finding a companion — now drumming, now resting, now weeping, now singing. Inner truth has been displaced outward. One's state depends entirely on the other. No center.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：月幾望，馬匹亡，無咎。",
+        "english": "The moon is nearly full. The team horse goes astray. No blame. Nearing fullness, one lets go of what paired it to the lower. The ascent toward truth requires leaving something behind.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：有孚攣如，無咎。",
+        "english": "Possessing truth that binds together. No blame. Inner truth that holds things in union — not through force but through the gravity of sincerity itself.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：翰音登于天，貞凶。",
+        "english": "Cockcrow ascending to heaven. Perseverance brings misfortune. The sound without the substance. When sincerity is only performance — reaching for heaven with a farmyard voice — it cannot hold.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "110",
+    "number": 61,
+    "pinyin": "Zhōng Fú",
+    "upper_trigram": "011"
+  },
+  {
+    "binary": "001100",
+    "chinese": "小過",
+    "english": "Preponderance of the Small",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "山上有雷，小過。君子以行過乎恭，喪過乎哀，用過乎儉。",
+      "english": "Thunder on the mountain: Preponderance of the Small. The noble one, in conduct, exceeds in reverence; in mourning, exceeds in grief; in expenditure, exceeds in frugality. Exceeding — but only in the direction of care, not ambition."
+    },
+    "judgment": {
+      "chinese": "小過：亨，利貞。可小事，不可大事。飛鳥遺之音，不宜上宜下，大吉。",
+      "english": "Preponderance of the Small. Success. Perseverance is favorable. Small things may be done; great things should not be done. The flying bird leaves behind its song — it is not fitting to strive upward, but fitting to remain below. Great good fortune. In this time, modesty exceeds and that is correct."
+    },
+    "lines": [
+      {
+        "chinese": "初六：飛鳥以凶。",
+        "english": "The bird flies up — misfortune. Rising when one should stay low. The time calls for restraint, not ascent.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：過其祖，遇其妣。不及其君，遇其臣，無咎。",
+        "english": "Passing by the grandfather, one meets the grandmother. Not reaching the prince, one meets the minister. No blame. One does not reach the highest, but finds what is appropriate at a lesser level. This is enough.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：弗過防之，從或戕之，凶。",
+        "english": "If one does not take extraordinary precautions, someone may come from behind and strike. Misfortune. In a time of small excess, ordinary caution is not enough.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：無咎，弗過遇之，往厲必戒，勿用永貞。",
+        "english": "No blame. Without exceeding, one meets the situation. Going forward is dangerous — one must be on guard. Do not use this as a permanent way. A temporary measure, not a principle.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：密雲不雨，自我西郊。公弋取彼在穴。",
+        "english": "Dense clouds, no rain, from the western outskirts. The duke shoots and takes the one in the cave. The conditions gather but do not yet release. Precision in small matters succeeds where large gestures would not.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：弗遇過之，飛鳥離之，凶，是謂災眚。",
+        "english": "Not meeting it but passing beyond it. The flying bird departs from it. Misfortune. This is called calamity and injury. Overshooting the mark entirely — what was small becomes catastrophic through excess.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "001",
+    "number": 62,
+    "pinyin": "Xiǎo Guò",
+    "upper_trigram": "100"
+  },
+  {
+    "binary": "101010",
+    "chinese": "既濟",
+    "english": "After Completion",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "水在火上，既濟。君子以思患而豫防之。",
+      "english": "Water over fire: After Completion. The noble one reflects on misfortune and arms against it in advance. The very completeness of the situation is what demands caution. What is perfectly balanced is most susceptible to disturbance."
+    },
+    "judgment": {
+      "chinese": "既濟：亨小，利貞。初吉終亂。",
+      "english": "After Completion. Success in small matters. Perseverance is favorable. Good fortune at the beginning, disorder at the end. Everything is in its proper place — and that is precisely the danger. When the peak has been reached, decline begins. Vigilance, not celebration."
+    },
+    "lines": [
+      {
+        "chinese": "初九：曳其輪，濡其尾，無咎。",
+        "english": "Dragging one's wheels, getting one's tail wet. No blame. Holding back at the start, even when everything seems ready. Restraint at the moment of completion is wisdom.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "六二：婦喪其茀，勿逐，七日得。",
+        "english": "The woman loses the curtain of her carriage. Do not pursue it. In seven days it will be recovered. What is lost in the transition will return on its own. Do not chase it.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "九三：高宗伐鬼方，三年克之，小人勿用。",
+        "english": "The Illustrious Ancestor campaigns against the demon territory. After three years he conquers it. Inferior people should not be employed. Even after completion, difficult work remains. Undertake it with the right people — it will take longer than expected.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "六四：繻有衣袽，終日戒。",
+        "english": "Fine silk garments — but underneath, rags for plugging leaks. Be on guard all day long. Beneath the appearance of completion, there are breaches. Attend to them constantly.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "九五：東鄰殺牛，不如西鄰之禴祭，實受其福。",
+        "english": "The eastern neighbor slaughters an ox, but the western neighbor's simple spring offering actually receives the blessing. Sincerity in small things surpasses lavishness. What matters is the inner attitude, not the scale of the gesture.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上六：濡其首，厲。",
+        "english": "Getting one's head wet. Danger. Going too far into the water after the crossing is complete. The completion has passed — continuing forward now means submersion.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "101",
+    "number": 63,
+    "pinyin": "Jì Jì",
+    "upper_trigram": "010"
+  },
+  {
+    "binary": "010101",
+    "chinese": "未濟",
+    "english": "Before Completion",
+    "hexagram_reading": null,
+    "image": {
+      "chinese": "火在水上，未濟。君子以慎辨物居方。",
+      "english": "Fire over water: Before Completion. The noble one is careful in discriminating among things, so that each finds its proper place. Nothing is settled yet. The work of sorting and placing continues."
+    },
+    "judgment": {
+      "chinese": "未濟：亨。小狐汔濟，濡其尾，無攸利。",
+      "english": "Before Completion. Success. The small fox has almost crossed the stream, but gets its tail wet. Nothing is favorable. Nearly there — but the final step requires as much care as the first. Premature confidence is the danger. The transition is not yet complete."
+    },
+    "lines": [
+      {
+        "chinese": "初六：濡其尾，吝。",
+        "english": "Getting one's tail wet. Humiliation. Plunging forward without assessing depth. The beginning of an incomplete crossing — restraint would serve better than haste.",
+        "position": 1,
+        "reading": null
+      },
+      {
+        "chinese": "九二：曳其輪，貞吉。",
+        "english": "Dragging one's wheels. Perseverance brings good fortune. Holding back, not rushing toward completion. The braking force is what keeps things on course.",
+        "position": 2,
+        "reading": null
+      },
+      {
+        "chinese": "六三：未濟，征凶，利涉大川。",
+        "english": "Before completion. Advancing brings misfortune. It is favorable to cross the great water. A paradox: one cannot advance piecemeal, but one can commit fully. Half-measures fail; wholehearted effort succeeds.",
+        "position": 3,
+        "reading": null
+      },
+      {
+        "chinese": "九四：貞吉，悔亡。震用伐鬼方，三年有賞于大國。",
+        "english": "Perseverance brings good fortune. Remorse disappears. Shock — used to campaign against the demon territory. After three years, one is rewarded by the great nation. Sustained effort through difficulty. The reward comes, but not quickly.",
+        "position": 4,
+        "reading": null
+      },
+      {
+        "chinese": "六五：貞吉，無悔。君子之光，有孚，吉。",
+        "english": "Perseverance brings good fortune. No remorse. The light of the noble one. There is sincerity. Good fortune. Genuine radiance — not the light of completion, but the light of character that shines regardless of circumstance.",
+        "position": 5,
+        "reading": null
+      },
+      {
+        "chinese": "上九：有孚于飲酒，無咎。濡其首，有孚失是。",
+        "english": "Sincerity in drinking wine. No blame. But getting one's head wet — even with sincerity, one loses what is right. Celebration before the work is done. A little is acceptable; too much and the sincerity itself is drowned.",
+        "position": 6,
+        "reading": null
+      }
+    ],
+    "lower_trigram": "010",
+    "number": 64,
+    "pinyin": "Wèi Jì",
+    "upper_trigram": "101"
+  }
+]
