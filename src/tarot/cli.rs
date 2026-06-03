@@ -18,7 +18,7 @@ pub enum Subcommand {
 #[derive(clap::Args)]
 pub struct DrawArgs {
     /// Number of cards to draw
-    #[arg(long, default_value_t = 1)]
+    #[arg(short = 'n', long, default_value_t = 1)]
     pub count: usize,
     /// Seed timestamp (RFC 3339); defaults to now
     #[arg(long, alias = "at")]
