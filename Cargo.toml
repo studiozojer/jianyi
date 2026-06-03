@@ -1,0 +1,30 @@
+[package]
+name = "jianyi"
+version = "0.1.0"
+edition = "2021"
+description = "A lightweight, offline I Ching and tarot CLI."
+license = "MIT OR Apache-2.0"
+repository = "" # TODO(david): fill in the jianyi repo URL before publish
+readme = "README.md"
+keywords = ["iching", "i-ching", "tarot", "divination", "cli"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "jianyi"
+path = "src/main.rs"
+
+# NOTE: the dev-only `gen-data` binary is declared in Task 4 (once its source
+# exists), feature-gated so default builds / `cargo install` never compile it.
+
+[dependencies]
+clap = { version = "4", features = ["derive", "env"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+rand = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = "symbols"
