@@ -1,6 +1,6 @@
 # jianyi
 
-簡儀 — a lightweight, offline I Ching and tarot CLI. Named after Guo Shoujing's simplified armillary sphere (simplified Chinese: 简仪), `jianyi` strips the divination interface down to its essentials: deterministic casting from a seed, structured text output, and a stable JSON schema for scripting. No network connection, no account, no external data sources.
+簡儀 — a portable, deterministic divination calculator. Think pocket calculator or swiss army knife: `jianyi` is stripped to base functions — deterministic casting from a seed, structured text output, and a stable JSON schema for scripting — so a model can fold it into its own toolset as one primitive in a larger whole. No network connection, no account, no external data sources. (The name is Guo Shoujing's 簡儀 (1276): the observational instrument pared down to its portable working essence — the same gesture, in software.)
 
 ## Install
 

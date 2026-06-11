@@ -2,7 +2,7 @@
 name = "jianyi"
 version = "0.1.0"
 edition = "2021"
-description = "A lightweight, offline I Ching and tarot CLI."
+description = "A portable, deterministic, offline I Ching and tarot calculator."
 license = "MIT OR Apache-2.0"
 repository = "" # TODO(david): fill in the jianyi repo URL before publish
 readme = "README.md"

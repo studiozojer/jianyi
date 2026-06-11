@@ -13,7 +13,7 @@ use output::OutputFormat;
 #[command(
     name = "jianyi",
     version,
-    about = "A lightweight, offline I Ching and tarot CLI."
+    about = "A portable, deterministic, offline I Ching and tarot calculator."
 )]
 struct Cli {
     /// Emit JSON instead of pretty output. Stable schema; suitable for scripts.
