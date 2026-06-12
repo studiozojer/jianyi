@@ -9,6 +9,10 @@ readme = "README.md"
 keywords = ["iching", "i-ching", "tarot", "divination", "cli"]
 categories = ["command-line-utilities"]
 
+[lib]
+name = "jianyi"
+path = "src/lib.rs"
+
 [[bin]]
 name = "jianyi"
 path = "src/main.rs"

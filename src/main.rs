@@ -2,12 +2,8 @@ use std::process::ExitCode;
 
 use clap::{Parser, Subcommand};
 
-mod error;
-mod iching;
-mod output;
-mod tarot;
-
-use output::OutputFormat;
+use jianyi::output::OutputFormat;
+use jianyi::{iching, tarot};
 
 #[derive(Parser)]
 #[command(
@@ -28,7 +24,7 @@ struct Cli {
 enum Command {
     /// I Ching — cast, hexagram lookup, trigram lookup, compose.
     Iching(iching::cli::Args),
-    /// Tarot — draw cards.
+    /// Tarot — new deck, shuffle, draw, inspect.
     Tarot(tarot::cli::Args),
 }
 
