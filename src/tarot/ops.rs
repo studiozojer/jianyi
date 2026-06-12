@@ -2,7 +2,9 @@ use chrono::{DateTime, Utc};
 use rand::rngs::StdRng;
 use rand::{Rng, SeedableRng};
 
-use crate::tarot::deck::{Deck, DeckCard};
+use serde::{Deserialize, Serialize};
+
+use crate::tarot::deck::{card_display_name, suit_string, Deck, DeckCard};
 
 /// Riffle passes per shuffle. ~7 is the accepted threshold to mix a deck.
 const RIFFLE_PASSES: usize = 7;
@@ -82,6 +84,86 @@ pub fn shuffle(deck: &Deck, seed: DateTime<Utc>, no_reversals: bool) -> Deck {
     Deck { cards }
 }
 
+/// What to draw: the top `n` cards, or the single card at a pile position.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Select {
+    Top(usize),
+    At(usize),
+}
+
+/// A revealed card in draw/inspect output. `index` is the card's 0..=77 identity
+/// (distinct from a pile `position`).
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+pub struct DrawnCard {
+    pub card: String,
+    pub index: u8,
+    pub suit: String,
+    pub reversed: bool,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum DrawError {
+    NotEnough { requested: usize, available: usize },
+    OutOfRange { position: usize, len: usize },
+}
+
+impl std::fmt::Display for DrawError {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        match self {
+            DrawError::NotEnough { requested, available } => write!(
+                f,
+                "cannot draw {requested} card(s); only {available} remain in the deck"
+            ),
+            DrawError::OutOfRange { position, len } => write!(
+                f,
+                "no card at position {position}; deck has {len} card(s) (positions 0..{len})"
+            ),
+        }
+    }
+}
+
+impl std::error::Error for DrawError {}
+
+/// Expand a `DeckCard` into a revealed `DrawnCard`.
+pub fn to_drawn(dc: &DeckCard) -> DrawnCard {
+    DrawnCard {
+        card: card_display_name(dc.card),
+        index: dc.card as u8,
+        suit: suit_string(dc.card),
+        reversed: dc.reversed,
+    }
+}
+
+/// Draw card(s) from the pile, returning the revealed cards and the shrunk deck.
+pub fn draw(deck: &Deck, select: Select) -> Result<(Vec<DrawnCard>, Deck), DrawError> {
+    match select {
+        Select::Top(n) => {
+            if n > deck.cards.len() {
+                return Err(DrawError::NotEnough {
+                    requested: n,
+                    available: deck.cards.len(),
+                });
+            }
+            let drawn = deck.cards[..n].iter().map(to_drawn).collect();
+            let rest = Deck {
+                cards: deck.cards[n..].to_vec(),
+            };
+            Ok((drawn, rest))
+        }
+        Select::At(pos) => {
+            if pos >= deck.cards.len() {
+                return Err(DrawError::OutOfRange {
+                    position: pos,
+                    len: deck.cards.len(),
+                });
+            }
+            let mut cards = deck.cards.clone();
+            let dc = cards.remove(pos);
+            Ok((vec![to_drawn(&dc)], Deck { cards }))
+        }
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -152,5 +234,57 @@ mod tests {
         let reshuffled = shuffle(&with_rev, reshuffle_seed, true);
         assert!(reshuffled.cards.iter().all(|c| !c.reversed));
         assert_eq!(reshuffled.len(), 78);
+    }
+
+    #[test]
+    fn draw_top_pops_in_order_and_shrinks() {
+        let deck = Deck::new(None);
+        let (drawn, rest) = draw(&deck, Select::Top(3)).unwrap();
+        assert_eq!(drawn.len(), 3);
+        assert_eq!(rest.len(), 75);
+        assert_eq!(drawn[0].card, "The Fool"); // top of a fresh deck
+        assert_eq!(drawn[0].index, 0);
+    }
+
+    #[test]
+    fn draw_at_removes_the_card_at_that_position() {
+        let deck = Deck::new(None); // index i sits at position i
+        let (drawn, rest) = draw(&deck, Select::At(39)).unwrap();
+        assert_eq!(drawn.len(), 1);
+        assert_eq!(drawn[0].index, 39);
+        assert_eq!(rest.len(), 77);
+        // the card formerly at 39 is gone from the pile
+        assert!(!rest.cards.iter().any(|c| c.card as u8 == 39));
+    }
+
+    #[test]
+    fn draw_top_too_many_errors() {
+        let deck = Deck::new(Some(crate::tarot::deck::ArcanaFilter::Major)); // 22 cards
+        assert!(matches!(
+            draw(&deck, Select::Top(23)),
+            Err(DrawError::NotEnough { requested: 23, available: 22 })
+        ));
+    }
+
+    #[test]
+    fn draw_at_out_of_range_errors() {
+        let deck = Deck::new(None);
+        assert!(matches!(
+            draw(&deck, Select::At(78)),
+            Err(DrawError::OutOfRange { position: 78, len: 78 })
+        ));
+    }
+
+    #[test]
+    fn card_drawn_at_does_not_reappear_after_shuffle() {
+        let deck = shuffle(&Deck::new(None), seed(), false);
+        let (drawn, rest) = draw(&deck, Select::At(39)).unwrap();
+        let gone = drawn[0].index;
+        let reshuffled = shuffle(&rest, seed(), false);
+        assert_eq!(reshuffled.len(), 77);
+        assert!(
+            !reshuffled.cards.iter().any(|c| c.card as u8 == gone),
+            "a card drawn before the shuffle reappeared"
+        );
     }
 }
