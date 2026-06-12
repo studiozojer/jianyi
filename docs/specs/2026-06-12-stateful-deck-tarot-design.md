@@ -138,14 +138,34 @@ whatever it reveals).
 |----|--------------------|---------|
 | `new` | `new(arcana: Option<Filter>) -> Deck` | fresh deck in canonical order, all upright, unshuffled; `major`/`minor` sub-deck supported |
 | `shuffle` | `shuffle(Deck, entropy_seed, no_reversals: bool) -> Deck` | reordered deck with orientations set; deterministic from `(deck, seed)`; default seed = now |
-| `draw` | `draw(Deck, n: usize) -> (Vec<DrawnCard>, Deck)` | top `n` cards (card + *revealed* orientation) and the shrunk deck |
+| `draw` | `draw(Deck, Select) -> (Vec<DrawnCard>, Deck)`, where `Select = Top(n) \| At(position)` | the selected card(s) (card + *revealed* orientation) and the shrunk deck |
 | `inspect` | `inspect(Deck) -> View` | expanded pile; pure read, no mutation |
 
 - `new` and `shuffle` are separate: a fresh deck is a real, nameable state (the
   app can show "new deck," then animate the shuffle).
 - `draw` from an unshuffled deck is legal (canonical order) — correct behavior,
   not a guarded error.
-- `draw` with `n > pile size` is an error (as today).
+- `draw` with `n > pile size` (or an `At(position)` out of range) is an error.
+- **Two draw selections.** `Top(n)` is the off-the-top deal; `At(position)` is the
+  fan-pick — remove the single card at pile position `position` (top of pile =
+  position 0), splicing it out so later cards shift down one. They are mutually
+  exclusive per call. *Only jianyi can resolve a position → card*, because the
+  caller holds an opaque deck code and does not know the pile order — so the
+  fan-pick must be an engine op, not something the app does itself.
+- **On a well-shuffled deck, `At` and `Top` are statistically the same draw** (a
+  fair shuffle already randomized position). `At` does not add randomness; it
+  exists to *honor the user's physical pick* (they tapped that card in the fan,
+  and the experience breaks if they're silently handed the top one) and to select
+  a specific card from an *un*shuffled or deliberately-ordered pile.
+- **Drawn cards leave the pile permanently; jianyi never re-adds them.** A card
+  drawn before a `shuffle` is simply absent from that shuffle — `shuffle` only ever
+  touches the pile it is handed and has no knowledge of cards already on the table.
+  So "pull from the middle → shuffle → pull from the top" needs no special
+  handling: the middle card is gone after the first draw and cannot reappear.
+  Re-incorporating a drawn card is an explicit op we are *not* building (see Out
+  of scope). Note: the `position` of an `At` draw is distinct from a card's
+  `index` (its 0..=77 identity in the JSON shape) — different meanings, don't
+  conflate.
 
 ### Shuffle model (3b — physical riffle + cut)
 
@@ -173,13 +193,14 @@ shuffle rather than an independent coin flip:
 ```
 jianyi tarot new      [--arcana major|minor]
 jianyi tarot shuffle  <deck-code> [--seed <rfc3339>] [--no-reversals]
-jianyi tarot draw     [<deck-code>] [-n N] [--seed <rfc3339>] [--emit-deck]
+jianyi tarot draw     [<deck-code>] [-n N | --at <position>] [--seed <rfc3339>] [--emit-deck]
 jianyi tarot inspect  <deck-code>
 ```
 
 - **`draw` is the one-shot hinge:**
-  - *with* `<deck-code>` → pop `n` from the top; **always** emit drawn cards **+
-    the new deck code** (else state is lost).
+  - *with* `<deck-code>` → remove the selected card(s) — top `n` (`-n`) or a
+    single fan-pick (`--at <position>`); **always** emit drawn cards **+ the new
+    deck code** (else state is lost). `-n` and `--at` are mutually exclusive.
   - *without* `<deck-code>` → one-shot: `new` + `shuffle(--seed or now)` +
     `draw n`; print the cards; emit the deck code **only if `--emit-deck`**. This
     is the "works without shared state" path and is backward-compatible with
@@ -219,6 +240,10 @@ Implementation is test-driven (RED → GREEN per op).
 - **Op unit tests (pure / deterministic):** same `(deck, seed)` → identical
   shuffle; `draw` pops from the top in order; no duplicates / no loss; arcana
   filters; `n > pile` errors.
+- **Draw-by-position:** `At(k)` removes exactly the card at pile position `k`;
+  the remaining pile equals the original minus that card, order otherwise intact;
+  `At` out of range errors; **a card drawn `At` before a `shuffle` does not
+  reappear in the shuffled pile** (the persistence-across-shuffle guarantee).
 - **Codec round-trip:** `encode → decode` identity for full *and* partial decks;
   bad version / base64 / length rejected with a clear error; `inspect` agrees with
   the logical pile.
@@ -238,6 +263,9 @@ Implementation is test-driven (RED → GREEN per op).
 - **`cut` / `peek` / `reset` as standalone CLI gestures** — easy additions; `new`
   covers reset, `draw` covers peek. The app can request `cut` when the UI wants a
   distinct "cut the deck" beat.
+- **Returning a card to the deck** — some practices reincorporate a drawn card and
+  reshuffle. Here, drawn cards leave the pile permanently; a `return` / `insert` op
+  is acknowledged but not built this round.
 - **The table model** (zones, spread positions, face-up/down placement) — lives in
   the Swift app (future), per Principle 3.
 - **The X round** — kairos-ffi → jianyi dependency, `kairos-divination` reshape,
