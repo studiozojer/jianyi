@@ -35,18 +35,31 @@ fn print_pretty(result: &crate::iching::CastResult) -> std::io::Result<()> {
     use std::io::Write;
     let stdout = std::io::stdout();
     let mut out = stdout.lock();
+    write!(out, "{}", format_cast(result))
+}
 
-    writeln!(out, "I Ching")?;
-    writeln!(out)?;
+/// Build the full pretty render of a cast as a string.
+///
+/// Emits the complete canonical record in one pass — line diagram, then for the
+/// primary hexagram the Judgment and Image (Chinese + English), the Chinese +
+/// English of each changing line, the nuclear hexagram, and (when lines change)
+/// the resulting hexagram's Judgment and Image. A reading off `jianyi iching cast`
+/// is meant to stand on its own; nothing should need a second lookup to render.
+pub fn format_cast(result: &crate::iching::CastResult) -> String {
+    use std::fmt::Write;
+    let mut s = String::new();
+
+    let _ = writeln!(s, "I Ching");
+    let _ = writeln!(s);
     if let Some(ref q) = result.question {
-        writeln!(out, "  {q}")?;
-        writeln!(out)?;
+        let _ = writeln!(s, "  {q}");
+        let _ = writeln!(s);
     }
 
     for line in render_lines(&result.lines).lines() {
-        writeln!(out, "  {line}")?;
+        let _ = writeln!(s, "  {line}");
     }
-    writeln!(out)?;
+    let _ = writeln!(s);
 
     let primary = lookup_hexagram(result.primary_number).unwrap();
     let upper = lookup_trigram_by_binary(&primary.upper_trigram)
@@ -55,44 +68,95 @@ fn print_pretty(result: &crate::iching::CastResult) -> std::io::Result<()> {
     let lower = lookup_trigram_by_binary(&primary.lower_trigram)
         .map(|t| t.english.as_str())
         .unwrap_or("?");
-    writeln!(out, "  {upper} over {lower}")?;
-    writeln!(out)?;
+    let _ = writeln!(s, "  {upper} over {lower}");
+    let _ = writeln!(s);
 
-    writeln!(out, "  Judgment")?;
-    writeln!(out, "  {}", primary.judgment.chinese)?;
-    writeln!(out, "  {}", primary.judgment.english)?;
+    let _ = writeln!(s, "  Judgment");
+    let _ = writeln!(s, "  {}", primary.judgment.chinese);
+    let _ = writeln!(s, "  {}", primary.judgment.english);
     if let Some(r) = &primary.hexagram_reading {
-        writeln!(out)?;
-        writeln!(out, "  Reading")?;
-        writeln!(out, "  {r}")?;
+        let _ = writeln!(s);
+        let _ = writeln!(s, "  Reading");
+        let _ = writeln!(s, "  {r}");
     }
-    writeln!(out)?;
-    writeln!(out, "  Image")?;
-    writeln!(out, "  {}", primary.image.english)?;
+    let _ = writeln!(s);
+    let _ = writeln!(s, "  Image");
+    let _ = writeln!(s, "  {}", primary.image.chinese);
+    let _ = writeln!(s, "  {}", primary.image.english);
 
     if !result.changing_lines.is_empty() {
-        writeln!(out)?;
-        writeln!(out, "  Changing lines:")?;
+        let _ = writeln!(s);
+        let _ = writeln!(s, "  Changing lines:");
         for &pos in &result.changing_lines {
             if let Some(l) = primary.lines.iter().find(|l| l.position == pos) {
-                writeln!(out, "    Line {pos} · {}", l.english)?;
+                // Chinese on the "Line N ·" row, English aligned beneath it.
+                let _ = writeln!(s, "    Line {pos} · {}", l.chinese);
+                let _ = writeln!(s, "             {}", l.english);
                 if let Some(r) = &l.reading {
-                    writeln!(out, "      {r}")?;
+                    let _ = writeln!(s, "             {r}");
                 }
             }
         }
-        if let Some(num) = result.resulting_number {
-            let resulting = lookup_hexagram(num).unwrap();
-            writeln!(out)?;
-            writeln!(
-                out,
-                "  Becomes: {}. {} {} — {}",
-                resulting.number, resulting.chinese, resulting.pinyin, resulting.english
-            )?;
-            writeln!(out)?;
-            writeln!(out, "  Judgment")?;
-            writeln!(out, "  {}", resulting.judgment.english)?;
-        }
     }
-    Ok(())
+
+    // Nuclear hexagram — the hidden interior. Always present; rendered compact.
+    let nuclear = lookup_hexagram(result.nuclear_number).unwrap();
+    let _ = writeln!(s);
+    let _ = writeln!(
+        s,
+        "  Nuclear: {}. {} {} — {}",
+        nuclear.number, nuclear.chinese, nuclear.pinyin, nuclear.english
+    );
+    let _ = writeln!(s, "  {}", nuclear.judgment.chinese);
+    let _ = writeln!(s, "  {}", nuclear.judgment.english);
+
+    // Resulting hexagram — only when lines change. Judgment and Image, no lines.
+    if let Some(num) = result.resulting_number {
+        let resulting = lookup_hexagram(num).unwrap();
+        let _ = writeln!(s);
+        let _ = writeln!(
+            s,
+            "  Becomes: {}. {} {} — {}",
+            resulting.number, resulting.chinese, resulting.pinyin, resulting.english
+        );
+        let _ = writeln!(s);
+        let _ = writeln!(s, "  Judgment");
+        let _ = writeln!(s, "  {}", resulting.judgment.chinese);
+        let _ = writeln!(s, "  {}", resulting.judgment.english);
+        let _ = writeln!(s);
+        let _ = writeln!(s, "  Image");
+        let _ = writeln!(s, "  {}", resulting.image.chinese);
+        let _ = writeln!(s, "  {}", resulting.image.english);
+    }
+    s
+}
+
+#[cfg(test)]
+mod tests {
+    use super::format_cast;
+    use crate::iching::cast::cast;
+
+    // Open cast on a fixed seed: hexagram 45 (萃 Gathering Together),
+    // changing line 5 → 16 (豫 Enthusiasm), nuclear 53 (漸 Development).
+    const SEED_45: &str = "2026-06-12T21:51:54+00:00";
+
+    #[test]
+    fn pretty_includes_full_canonical_record() {
+        let result = cast(None, SEED_45);
+        // Sanity: the seed still resolves to the expected figure.
+        assert_eq!(result.primary_number, 45);
+        assert_eq!(result.resulting_number, Some(16));
+        assert_eq!(result.nuclear_number, 53);
+
+        let out = format_cast(&result);
+        // Primary Image — Chinese must be present, not just English.
+        assert!(out.contains("澤上于地"), "image Chinese missing:\n{out}");
+        // Changing line — Chinese text of line 5.
+        assert!(out.contains("萃有位"), "changing-line Chinese missing:\n{out}");
+        // Nuclear hexagram must be rendered.
+        assert!(out.contains("Nuclear:"), "nuclear block missing:\n{out}");
+        assert!(out.contains("漸"), "nuclear hexagram missing:\n{out}");
+        // Resulting hexagram Judgment — Chinese present.
+        assert!(out.contains("利建侯行師"), "resulting Judgment Chinese missing:\n{out}");
+    }
 }
