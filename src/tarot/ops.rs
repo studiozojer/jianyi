@@ -74,6 +74,11 @@ pub fn shuffle(deck: &Deck, seed: DateTime<Utc>, no_reversals: bool) -> Deck {
     for _ in 0..CUT_FLIPS {
         cards = cut_and_flip(&cards, &mut rng, no_reversals);
     }
+    if no_reversals {
+        for c in &mut cards {
+            c.reversed = false;
+        }
+    }
     Deck { cards }
 }
 
@@ -130,5 +135,22 @@ mod tests {
         let shuffled = shuffle(&deck, seed(), true);
         assert!(shuffled.cards.iter().all(|c| !c.reversed));
         assert_eq!(shuffled.len(), 78);
+    }
+
+    #[test]
+    fn no_reversals_clears_prior_reversals_on_reshuffle() {
+        // A deck that already carries reversals from a prior shuffle...
+        let with_rev = shuffle(&Deck::new(None), seed(), false);
+        assert!(
+            with_rev.cards.iter().any(|c| c.reversed),
+            "precondition: the with-reversals shuffle should produce some reversed cards"
+        );
+        // ...must come out entirely upright when reshuffled with no_reversals.
+        // Use a distinct seed (offset +13s) that is known to leave reversed cards
+        // in the top segment of cut_and_flip when the bug is present.
+        let reshuffle_seed = Utc.with_ymd_and_hms(2026, 1, 1, 0, 0, 13).unwrap();
+        let reshuffled = shuffle(&with_rev, reshuffle_seed, true);
+        assert!(reshuffled.cards.iter().all(|c| !c.reversed));
+        assert_eq!(reshuffled.len(), 78);
     }
 }
