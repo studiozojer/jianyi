@@ -1,9 +1,8 @@
-//! Tarot card types for random card generation
+//! Tarot card types.
 // Vendored engine module — retains full public API surface even when not all items are
 // exercised by the CLI. Dead-code and transmute-annotation lints suppressed intentionally.
 #![allow(dead_code, clippy::missing_transmute_annotations)]
 
-use rand::Rng;
 use serde::{Deserialize, Serialize};
 
 /// A tarot card from the standard 78-card deck
@@ -103,12 +102,6 @@ impl TarotCard {
     /// Total number of cards in the deck
     pub const COUNT: usize = 78;
 
-    /// Generate a random tarot card
-    pub fn random() -> Self {
-        let index = rand::thread_rng().gen_range(0..Self::COUNT);
-        Self::from_index(index).expect("index always valid")
-    }
-
     /// Convert from index (0-77) to card
     pub fn from_index(index: usize) -> Option<Self> {
         if index >= Self::COUNT {
@@ -149,21 +142,4 @@ pub enum TarotSuit {
     Cups,
     Swords,
     Pentacles,
-}
-
-/// A drawn tarot card with its orientation
-#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
-pub struct TarotDraw {
-    pub card: TarotCard,
-    pub upright: bool,
-}
-
-impl TarotDraw {
-    /// Draw a random card with random orientation
-    pub fn random() -> Self {
-        Self {
-            card: TarotCard::random(),
-            upright: rand::thread_rng().gen_bool(0.5),
-        }
-    }
 }
