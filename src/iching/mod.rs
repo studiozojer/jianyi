@@ -5,10 +5,15 @@ pub mod hexagram_data;
 pub mod render;
 pub mod trigram;
 
+#[cfg(feature = "cli")]
 pub mod cli;
+#[cfg(feature = "cli")]
 pub mod cmd_cast;
+#[cfg(feature = "cli")]
 pub mod cmd_compose;
+#[cfg(feature = "cli")]
 pub mod cmd_hexagram;
+#[cfg(feature = "cli")]
 pub mod cmd_trigram;
 
 pub use cast::{cast, CastResult, LineValue};

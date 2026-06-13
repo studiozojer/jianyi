@@ -16,6 +16,7 @@ path = "src/lib.rs"
 [[bin]]
 name = "jianyi"
 path = "src/main.rs"
+required-features = ["cli"]
 
 # Dev-only data generator, gated behind a feature so default builds and
 # `cargo install` never compile it. Run: cargo run --bin gen-data --features gen-data
@@ -25,14 +26,17 @@ path = "src/bin/gen-data.rs"
 required-features = ["gen-data"]
 
 [features]
+default = ["cli"]
+cli = ["dep:clap", "iching"]
+iching = ["dep:sha2"]
 gen-data = []
 
 [dependencies]
 base64 = "0.22"
-clap = { version = "4", features = ["derive", "env"] }
+clap = { version = "4", features = ["derive", "env"], optional = true }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-sha2 = "0.10"
+sha2 = { version = "0.10", optional = true }
 rand = "0.8"
 chrono = { version = "0.4", features = ["serde"] }
 
