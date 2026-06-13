@@ -1,4 +1,4 @@
-use base64::engine::general_purpose::STANDARD_NO_PAD;
+use base64::engine::general_purpose::URL_SAFE_NO_PAD;
 use base64::Engine;
 
 use crate::tarot::cards::TarotCard;
@@ -42,13 +42,13 @@ pub fn encode(deck: &Deck) -> String {
         let index = dc.card as u8; // discriminants are 0..=77, fit in u8
         bytes.push((index << 1) | dc.reversed as u8);
     }
-    format!("{VERSION_PREFIX}{}", STANDARD_NO_PAD.encode(&bytes))
+    format!("{VERSION_PREFIX}{}", URL_SAFE_NO_PAD.encode(&bytes))
 }
 
 /// Parse a `v1.<base64>` deck code back into a `Deck`.
 pub fn decode(code: &str) -> Result<Deck, CodeError> {
     let body = code.strip_prefix(VERSION_PREFIX).ok_or(CodeError::BadVersion)?;
-    let bytes = STANDARD_NO_PAD
+    let bytes = URL_SAFE_NO_PAD
         .decode(body)
         .map_err(|_| CodeError::BadBase64)?;
     let (&count, rest) = bytes.split_first().ok_or(CodeError::Truncated)?;
@@ -116,7 +116,7 @@ mod tests {
     #[test]
     fn truncated_rejected() {
         // count byte says 3 cards but no card bytes follow
-        let code = format!("{VERSION_PREFIX}{}", STANDARD_NO_PAD.encode([3u8]));
+        let code = format!("{VERSION_PREFIX}{}", URL_SAFE_NO_PAD.encode([3u8]));
         assert_eq!(decode(&code), Err(CodeError::Truncated));
     }
 }
