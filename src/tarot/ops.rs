@@ -4,6 +4,7 @@ use rand::{Rng, SeedableRng};
 
 use serde::{Deserialize, Serialize};
 
+use crate::tarot::cards::TarotCard;
 use crate::tarot::deck::{card_display_name, suit_string, Deck, DeckCard};
 
 /// Riffle passes per shuffle. ~7 is the accepted threshold to mix a deck.
@@ -164,6 +165,43 @@ pub fn draw(deck: &Deck, select: Select) -> Result<(Vec<DrawnCard>, Deck), DrawE
     }
 }
 
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum ReturnError {
+    BadIndex(u8),
+    Duplicate(u8),
+}
+
+impl std::fmt::Display for ReturnError {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        match self {
+            ReturnError::BadIndex(i) => {
+                write!(f, "no card with index {i}; valid indices are 0..78")
+            }
+            ReturnError::Duplicate(i) => {
+                write!(f, "card index {i} is already in the deck; cannot return it twice")
+            }
+        }
+    }
+}
+
+impl std::error::Error for ReturnError {}
+
+/// Place a card on the **bottom** of the pile — the far end from the draw point
+/// (`cards[0]` is the top, so the bottom is the end of the vec). This is the
+/// inverse of a top draw: a card drawn out can be set back under the deck, and
+/// the deck code keeps tracking the full order. `reversed` is the orientation
+/// the card lands with. Errors if the index isn't a real card, or the card is
+/// already in the deck (a deck can't hold the same card twice).
+pub fn return_to_bottom(deck: &Deck, index: u8, reversed: bool) -> Result<Deck, ReturnError> {
+    let card = TarotCard::from_index(index as usize).ok_or(ReturnError::BadIndex(index))?;
+    if deck.cards.iter().any(|dc| dc.card == card) {
+        return Err(ReturnError::Duplicate(index));
+    }
+    let mut cards = deck.cards.clone();
+    cards.push(DeckCard { card, reversed });
+    Ok(Deck { cards })
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -286,5 +324,56 @@ mod tests {
             !reshuffled.cards.iter().any(|c| c.card as u8 == gone),
             "a card drawn before the shuffle reappeared"
         );
+    }
+
+    #[test]
+    fn return_appends_to_the_bottom() {
+        // Draw the top card off a fresh deck, then return it: it should land at
+        // the very bottom (last position), not back on top.
+        let deck = Deck::new(None);
+        let (drawn, rest) = draw(&deck, Select::Top(1)).unwrap();
+        assert_eq!(drawn[0].index, 0); // The Fool was on top
+        let returned = return_to_bottom(&rest, drawn[0].index, drawn[0].reversed).unwrap();
+        assert_eq!(returned.len(), 78);
+        assert_eq!(returned.cards.last().unwrap().card as u8, 0);
+        assert_ne!(returned.cards[0].card as u8, 0, "returned card must not be on top");
+    }
+
+    #[test]
+    fn return_honors_orientation() {
+        let deck = Deck::new(Some(crate::tarot::deck::ArcanaFilter::Major));
+        let (drawn, rest) = draw(&deck, Select::Top(1)).unwrap();
+        let returned = return_to_bottom(&rest, drawn[0].index, true).unwrap();
+        let bottom = returned.cards.last().unwrap();
+        assert_eq!(bottom.card as u8, drawn[0].index);
+        assert!(bottom.reversed, "returned card should carry the given orientation");
+    }
+
+    #[test]
+    fn return_round_trip_preserves_the_card_set() {
+        // Draw three off the top, return all three: the deck is whole again.
+        let deck = shuffle(&Deck::new(None), seed(), false);
+        let (drawn, mut rest) = draw(&deck, Select::Top(3)).unwrap();
+        for d in &drawn {
+            rest = return_to_bottom(&rest, d.index, d.reversed).unwrap();
+        }
+        assert_eq!(rest.len(), 78);
+        let mut idx: Vec<u8> = rest.cards.iter().map(|c| c.card as u8).collect();
+        idx.sort_unstable();
+        idx.dedup();
+        assert_eq!(idx.len(), 78, "round-trip lost or duplicated cards");
+    }
+
+    #[test]
+    fn return_duplicate_is_rejected() {
+        // The Fool (index 0) is still on top of a fresh deck.
+        let deck = Deck::new(None);
+        assert_eq!(return_to_bottom(&deck, 0, false), Err(ReturnError::Duplicate(0)));
+    }
+
+    #[test]
+    fn return_bad_index_is_rejected() {
+        let deck = Deck::new(None);
+        assert_eq!(return_to_bottom(&deck, 78, false), Err(ReturnError::BadIndex(78)));
     }
 }
