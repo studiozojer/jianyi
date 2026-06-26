@@ -202,6 +202,40 @@ pub fn return_to_bottom(deck: &Deck, index: u8, reversed: bool) -> Result<Deck, 
     Ok(Deck { cards })
 }
 
+/// Cut the pile: keep the top `n` cards as the upper half, the remainder as the
+/// lower. Returns `(top, bottom)`. `n` is clamped to `0..=len`. Pure slicing —
+/// `merge(&top, &bottom)` restores the original order.
+pub fn split(deck: &Deck, keep_top: usize) -> (Deck, Deck) {
+    let n = keep_top.min(deck.cards.len());
+    (
+        Deck { cards: deck.cards[..n].to_vec() },
+        Deck { cards: deck.cards[n..].to_vec() },
+    )
+}
+
+/// Set the `top` pile back above the `bottom` pile (`top.cards` then
+/// `bottom.cards`). The inverse of `split`.
+pub fn merge(top: &Deck, bottom: &Deck) -> Deck {
+    let mut cards = Vec::with_capacity(top.cards.len() + bottom.cards.len());
+    cards.extend_from_slice(&top.cards);
+    cards.extend_from_slice(&bottom.cards);
+    Deck { cards }
+}
+
+/// Place a card on the **top** of the pile (`cards[0]`) — the inverse of a top
+/// draw, mirroring [`return_to_bottom`]. Errors if the index isn't a real card,
+/// or the card is already in the deck.
+pub fn return_to_top(deck: &Deck, index: u8, reversed: bool) -> Result<Deck, ReturnError> {
+    let card = TarotCard::from_index(index as usize).ok_or(ReturnError::BadIndex(index))?;
+    if deck.cards.iter().any(|dc| dc.card == card) {
+        return Err(ReturnError::Duplicate(index));
+    }
+    let mut cards = Vec::with_capacity(deck.cards.len() + 1);
+    cards.push(DeckCard { card, reversed });
+    cards.extend_from_slice(&deck.cards);
+    Ok(Deck { cards })
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -375,5 +409,48 @@ mod tests {
     fn return_bad_index_is_rejected() {
         let deck = Deck::new(None);
         assert_eq!(return_to_bottom(&deck, 78, false), Err(ReturnError::BadIndex(78)));
+    }
+
+    #[test]
+    fn split_then_merge_restores_original_order() {
+        let deck = shuffle(&Deck::new(None), seed(), false);
+        let (top, bottom) = split(&deck, 39);
+        assert_eq!(top.len(), 39);
+        assert_eq!(bottom.len(), 39);
+        // top's first card is the deck's top card (the one you'd be holding)
+        assert_eq!(top.cards[0], deck.cards[0]);
+        // merge(top, bottom) puts the held top half back above the bottom half
+        assert_eq!(merge(&top, &bottom), deck);
+    }
+
+    #[test]
+    fn split_keep_top_is_clamped_and_handles_odd() {
+        let deck = Deck::new(None); // 78
+        let (t, b) = split(&deck, 40);
+        assert_eq!((t.len(), b.len()), (40, 38));
+        // clamp: keep_top beyond len yields the whole deck on top, empty bottom
+        let (t2, b2) = split(&deck, 999);
+        assert_eq!((t2.len(), b2.len()), (78, 0));
+        // keep_top 0 → empty top, whole bottom
+        let (t3, b3) = split(&deck, 0);
+        assert_eq!((t3.len(), b3.len()), (0, 78));
+    }
+
+    #[test]
+    fn return_to_top_places_card_on_top_and_is_inverse_of_top_draw() {
+        let deck = Deck::new(None);
+        let (drawn, rest) = draw(&deck, Select::Top(1)).unwrap(); // The Fool off the top
+        assert_eq!(drawn[0].index, 0);
+        let restored = return_to_top(&rest, drawn[0].index, drawn[0].reversed).unwrap();
+        assert_eq!(restored.len(), 78);
+        assert_eq!(restored.cards[0].card as u8, 0, "returned card must land on top");
+        assert_eq!(restored, deck, "return_to_top inverts a top draw exactly");
+    }
+
+    #[test]
+    fn return_to_top_rejects_duplicate_and_bad_index() {
+        let deck = Deck::new(None); // The Fool (0) already on top
+        assert_eq!(return_to_top(&deck, 0, false), Err(ReturnError::Duplicate(0)));
+        assert_eq!(return_to_top(&deck, 78, false), Err(ReturnError::BadIndex(78)));
     }
 }
