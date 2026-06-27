@@ -472,7 +472,7 @@ mod tests {
         assert_eq!(return_to_top(&deck, 78, false), Err(ReturnError::BadIndex(78)));
     }
 
-    // Build a pile from card indices (all upright unless `rev` lists the index).
+    // Build a pile from card indices (all upright).
     fn pile(indices: &[u8]) -> Deck {
         Deck {
             cards: indices
