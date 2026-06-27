@@ -17,18 +17,12 @@ fn seed_to_u64(seed: DateTime<Utc>) -> u64 {
         .unwrap_or_else(|| seed.timestamp() * 1_000_000_000) as u64
 }
 
-/// One Gilbert–Shannon–Reeds riffle: split near the middle (with jitter),
-/// then interleave, taking from each half with probability proportional to its
-/// remaining size. Orientation is untouched here.
-fn riffle(cards: &[DeckCard], rng: &mut StdRng) -> Vec<DeckCard> {
-    let n = cards.len();
-    if n < 2 {
-        return cards.to_vec();
-    }
-    let cut = (n / 2 + rng.gen_range(0..=2)).clamp(1, n - 1);
-    let (left, right) = cards.split_at(cut);
+/// Proportional GSR interleave of two ordered piles: drop from each side with
+/// probability proportional to its remaining size; within-pile order preserved.
+/// Orientation is untouched.
+fn interleave(left: &[DeckCard], right: &[DeckCard], rng: &mut StdRng) -> Vec<DeckCard> {
     let (mut li, mut ri) = (0usize, 0usize);
-    let mut out = Vec::with_capacity(n);
+    let mut out = Vec::with_capacity(left.len() + right.len());
     while li < left.len() && ri < right.len() {
         let rl = (left.len() - li) as u32;
         let rr = (right.len() - ri) as u32;
@@ -43,6 +37,18 @@ fn riffle(cards: &[DeckCard], rng: &mut StdRng) -> Vec<DeckCard> {
     out.extend_from_slice(&left[li..]);
     out.extend_from_slice(&right[ri..]);
     out
+}
+
+/// One Gilbert–Shannon–Reeds riffle: split near the middle (with jitter), then
+/// interleave proportionally. Orientation is untouched here.
+fn riffle(cards: &[DeckCard], rng: &mut StdRng) -> Vec<DeckCard> {
+    let n = cards.len();
+    if n < 2 {
+        return cards.to_vec();
+    }
+    let cut = (n / 2 + rng.gen_range(0..=2)).clamp(1, n - 1);
+    let (left, right) = cards.split_at(cut);
+    interleave(left, right, rng)
 }
 
 /// One cut: lift the bottom segment, rotate it 180° (its order reverses and each
