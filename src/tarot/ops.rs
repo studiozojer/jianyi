@@ -17,18 +17,12 @@ fn seed_to_u64(seed: DateTime<Utc>) -> u64 {
         .unwrap_or_else(|| seed.timestamp() * 1_000_000_000) as u64
 }
 
-/// One Gilbert–Shannon–Reeds riffle: split near the middle (with jitter),
-/// then interleave, taking from each half with probability proportional to its
-/// remaining size. Orientation is untouched here.
-fn riffle(cards: &[DeckCard], rng: &mut StdRng) -> Vec<DeckCard> {
-    let n = cards.len();
-    if n < 2 {
-        return cards.to_vec();
-    }
-    let cut = (n / 2 + rng.gen_range(0..=2)).clamp(1, n - 1);
-    let (left, right) = cards.split_at(cut);
+/// Proportional GSR interleave of two ordered piles: drop from each side with
+/// probability proportional to its remaining size; within-pile order preserved.
+/// Orientation is untouched.
+fn interleave(left: &[DeckCard], right: &[DeckCard], rng: &mut StdRng) -> Vec<DeckCard> {
     let (mut li, mut ri) = (0usize, 0usize);
-    let mut out = Vec::with_capacity(n);
+    let mut out = Vec::with_capacity(left.len() + right.len());
     while li < left.len() && ri < right.len() {
         let rl = (left.len() - li) as u32;
         let rr = (right.len() - ri) as u32;
@@ -43,6 +37,18 @@ fn riffle(cards: &[DeckCard], rng: &mut StdRng) -> Vec<DeckCard> {
     out.extend_from_slice(&left[li..]);
     out.extend_from_slice(&right[ri..]);
     out
+}
+
+/// One Gilbert–Shannon–Reeds riffle: split near the middle (with jitter), then
+/// interleave proportionally. Orientation is untouched here.
+fn riffle(cards: &[DeckCard], rng: &mut StdRng) -> Vec<DeckCard> {
+    let n = cards.len();
+    if n < 2 {
+        return cards.to_vec();
+    }
+    let cut = (n / 2 + rng.gen_range(0..=2)).clamp(1, n - 1);
+    let (left, right) = cards.split_at(cut);
+    interleave(left, right, rng)
 }
 
 /// One cut: lift the bottom segment, rotate it 180° (its order reverses and each
@@ -83,6 +89,18 @@ pub fn shuffle(deck: &Deck, seed: DateTime<Utc>, no_reversals: bool) -> Deck {
         }
     }
     Deck { cards }
+}
+
+/// Riffle two given piles into one deck with a single GSR interleave, deterministic
+/// from `seed`. `left`/`right` are just the two argument piles — at each step the op
+/// drops from one or the other with probability proportional to its remaining size
+/// (no fixed leading side). Orientations are untouched. An empty pile degenerates to
+/// the other pile verbatim.
+pub fn riffle_piles(left: &Deck, right: &Deck, seed: DateTime<Utc>) -> Deck {
+    let mut rng = StdRng::seed_from_u64(seed_to_u64(seed));
+    Deck {
+        cards: interleave(&left.cards, &right.cards, &mut rng),
+    }
 }
 
 /// What to draw: the top `n` cards, or the single card at a pile position.
@@ -452,5 +470,103 @@ mod tests {
         let deck = Deck::new(None); // The Fool (0) already on top
         assert_eq!(return_to_top(&deck, 0, false), Err(ReturnError::Duplicate(0)));
         assert_eq!(return_to_top(&deck, 78, false), Err(ReturnError::BadIndex(78)));
+    }
+
+    // Build a pile from card indices (all upright).
+    fn pile(indices: &[u8]) -> Deck {
+        Deck {
+            cards: indices
+                .iter()
+                .map(|&i| DeckCard {
+                    card: TarotCard::from_index(i as usize).unwrap(),
+                    reversed: false,
+                })
+                .collect(),
+        }
+    }
+
+    #[test]
+    fn riffle_piles_is_deterministic() {
+        let left = pile(&[0, 1, 2, 3, 4]);
+        let right = pile(&[50, 51, 52]);
+        assert_eq!(
+            riffle_piles(&left, &right, seed()),
+            riffle_piles(&left, &right, seed())
+        );
+    }
+
+    #[test]
+    fn riffle_piles_conserves_count_and_cards() {
+        let left = pile(&[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+        let right = pile(&[40, 41, 42, 43, 44]);
+        let out = riffle_piles(&left, &right, seed());
+        assert_eq!(out.len(), 15);
+        let mut idx: Vec<u8> = out.cards.iter().map(|c| c.card as u8).collect();
+        idx.sort_unstable();
+        assert_eq!(idx, vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 40, 41, 42, 43, 44]);
+    }
+
+    #[test]
+    fn riffle_piles_is_a_valid_interleave_preserving_within_pile_order() {
+        // Disjoint index ranges: left < 20, right >= 40. Filtering the output back to
+        // each pile must reproduce that pile's original top-to-bottom order — the
+        // definition of a genuine interleave (merge of two ordered runs).
+        let left = pile(&[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+        let right = pile(&[40, 41, 42, 43, 44, 45]);
+        let out = riffle_piles(&left, &right, seed());
+        let left_seq: Vec<u8> = out
+            .cards
+            .iter()
+            .map(|c| c.card as u8)
+            .filter(|&i| i < 20)
+            .collect();
+        let right_seq: Vec<u8> = out
+            .cards
+            .iter()
+            .map(|c| c.card as u8)
+            .filter(|&i| i >= 40)
+            .collect();
+        assert_eq!(left_seq, vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+        assert_eq!(right_seq, vec![40, 41, 42, 43, 44, 45]);
+    }
+
+    #[test]
+    fn riffle_piles_handles_extreme_imbalance() {
+        // 20 vs 58, disjoint ranges, full 78-card result, no card lost or duplicated.
+        let left = pile(&(0u8..20).collect::<Vec<_>>());
+        let right = pile(&(20u8..78).collect::<Vec<_>>());
+        let out = riffle_piles(&left, &right, seed());
+        assert_eq!(out.len(), 78);
+        let mut idx: Vec<u8> = out.cards.iter().map(|c| c.card as u8).collect();
+        idx.sort_unstable();
+        idx.dedup();
+        assert_eq!(idx.len(), 78);
+    }
+
+    #[test]
+    fn riffle_piles_empty_side_returns_the_other_pile() {
+        let left = pile(&[]);
+        let right = pile(&[10, 11, 12, 13]);
+        let out = riffle_piles(&left, &right, seed());
+        assert_eq!(out, right);
+    }
+
+    #[test]
+    fn riffle_piles_preserves_orientations() {
+        // Mark one card reversed in each pile; the flag must survive the riffle.
+        let mut left = pile(&[0, 1, 2]);
+        left.cards[1].reversed = true;
+        let mut right = pile(&[30, 31, 32]);
+        right.cards[0].reversed = true;
+        let out = riffle_piles(&left, &right, seed());
+        let reversed: Vec<u8> = out
+            .cards
+            .iter()
+            .filter(|c| c.reversed)
+            .map(|c| c.card as u8)
+            .collect();
+        assert_eq!(reversed.len(), 2);
+        assert!(reversed.contains(&1));
+        assert!(reversed.contains(&30));
     }
 }
