@@ -5,6 +5,8 @@
 
 #[cfg(feature = "cli")]
 pub mod error;
+#[cfg(feature = "ffi")]
+pub mod ffi;
 #[cfg(feature = "iching")]
 pub mod iching;
 #[cfg(feature = "cli")]
