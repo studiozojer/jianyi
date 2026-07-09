@@ -16,7 +16,7 @@ fi
 OUT=target/android/jniLibs
 rm -rf "$OUT" && mkdir -p "$OUT"
 
-cargo ndk -t arm64-v8a -t armeabi-v7a -t x86_64 -o "$OUT" \
+CARGO_PROFILE_RELEASE_STRIP=none cargo ndk -t arm64-v8a -t armeabi-v7a -t x86_64 -o "$OUT" \
     build --release --no-default-features --features ffi
 
 echo "✅ $OUT"

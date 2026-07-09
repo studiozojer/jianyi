@@ -9,10 +9,10 @@ export IPHONEOS_DEPLOYMENT_TARGET=15.0
 rustup target add aarch64-apple-ios aarch64-apple-ios-sim >/dev/null
 
 echo "building device (aarch64-apple-ios)…"
-cargo build --release --target aarch64-apple-ios --no-default-features --features ffi
+CARGO_PROFILE_RELEASE_STRIP=none cargo build --release --target aarch64-apple-ios --no-default-features --features ffi
 
 echo "building simulator (aarch64-apple-ios-sim)…"
-cargo build --release --target aarch64-apple-ios-sim --no-default-features --features ffi
+CARGO_PROFILE_RELEASE_STRIP=none cargo build --release --target aarch64-apple-ios-sim --no-default-features --features ffi
 
 OUT=target/ios
 rm -rf "$OUT/jianyi.xcframework"
