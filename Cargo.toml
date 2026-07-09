@@ -12,6 +12,7 @@ categories = ["command-line-utilities"]
 [lib]
 name = "jianyi"
 path = "src/lib.rs"
+crate-type = ["rlib", "staticlib", "cdylib"]
 
 [[bin]]
 name = "jianyi"
@@ -29,6 +30,9 @@ required-features = ["gen-data"]
 default = ["cli"]
 cli = ["dep:clap", "iching"]
 iching = ["dep:sha2"]
+# C ABI for host apps (zhouyi's Expo module on iOS/Android). JSON in/out,
+# contract-identical to kairos-ffi's kairos_iching_* surface.
+ffi = ["iching"]
 gen-data = []
 
 [dependencies]
