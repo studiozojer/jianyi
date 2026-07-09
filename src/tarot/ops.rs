@@ -103,6 +103,22 @@ pub fn riffle_piles(left: &Deck, right: &Deck, seed: DateTime<Utc>) -> Deck {
     }
 }
 
+/// Flip a pile's orientations: toggle every card's `reversed`. Order and identity
+/// untouched. This is the data side of physically turning a half-deck 180° before a
+/// riffle — the move that introduces reversals (the riffle itself never turns a card).
+pub fn flip(deck: &Deck) -> Deck {
+    Deck {
+        cards: deck
+            .cards
+            .iter()
+            .map(|dc| DeckCard {
+                card: dc.card,
+                reversed: !dc.reversed,
+            })
+            .collect(),
+    }
+}
+
 /// What to draw: the top `n` cards, or the single card at a pile position.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Select {
@@ -568,5 +584,30 @@ mod tests {
         assert_eq!(reversed.len(), 2);
         assert!(reversed.contains(&1));
         assert!(reversed.contains(&30));
+    }
+
+    #[test]
+    fn flip_toggles_every_orientation() {
+        let mut deck = pile(&[0, 1, 2, 3]);
+        deck.cards[1].reversed = true;          // 1 reversed, the rest upright
+        let out = flip(&deck);
+        let states: Vec<bool> = out.cards.iter().map(|c| c.reversed).collect();
+        assert_eq!(states, vec![true, false, true, true]);
+    }
+
+    #[test]
+    fn flip_preserves_order_and_count() {
+        let deck = pile(&[5, 6, 7, 8, 9]);
+        let out = flip(&deck);
+        let idx: Vec<u8> = out.cards.iter().map(|c| c.card as u8).collect();
+        assert_eq!(idx, vec![5, 6, 7, 8, 9]);
+        assert_eq!(out.len(), 5);
+    }
+
+    #[test]
+    fn flip_is_involutive() {
+        let mut deck = pile(&[10, 11, 12]);
+        deck.cards[0].reversed = true;
+        assert_eq!(flip(&flip(&deck)), deck);   // flip ∘ flip == identity
     }
 }
