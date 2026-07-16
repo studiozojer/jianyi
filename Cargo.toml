@@ -34,6 +34,7 @@ iching = ["dep:sha2"]
 # contract-identical to kairos-ffi's kairos_iching_* surface.
 ffi = ["iching"]
 gen-data = []
+wasm = ["iching", "dep:wasm-bindgen"]
 
 [dependencies]
 base64 = "0.22"
@@ -42,9 +43,22 @@ serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 sha2 = { version = "0.10", optional = true }
 rand = "0.8"
-chrono = { version = "0.4", features = ["serde"] }
+chrono = { version = "0.4", features = ["serde", "wasmbind"] }
+wasm-bindgen = { version = "0.2", optional = true }
+
+# wasm32 needs getrandom's browser backend for rand, and chrono's wasm clock.
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom = { version = "0.2", features = ["js"] }
 
 [profile.release]
 lto = "thin"
 codegen-units = 1
 strip = "symbols"
+
+# wasm-pack's bundled wasm-opt (binaryen) predates the bulk-memory-ops that
+# rustc now emits by default for wasm32-unknown-unknown, so it fails to
+# validate the module. Skip the wasm-opt post-pass; the wasm-bindgen output
+# is already reasonably sized without it, and zhouyi's bundler can re-optimize
+# if needed.
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false

@@ -14,3 +14,5 @@ pub mod json_api;
 #[cfg(feature = "cli")]
 pub mod output;
 pub mod tarot;
+#[cfg(feature = "wasm")]
+pub mod wasm;
