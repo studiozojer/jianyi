@@ -9,6 +9,10 @@ pub mod error;
 pub mod ffi;
 #[cfg(feature = "iching")]
 pub mod iching;
+#[cfg(feature = "iching")]
+pub mod json_api;
 #[cfg(feature = "cli")]
 pub mod output;
 pub mod tarot;
+#[cfg(feature = "wasm")]
+pub mod wasm;
