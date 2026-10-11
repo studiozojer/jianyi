@@ -19,7 +19,10 @@ impl std::fmt::Display for CodeError {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         match self {
             CodeError::BadVersion => {
-                write!(f, "unrecognized deck-code version (expected `{VERSION_PREFIX}`)")
+                write!(
+                    f,
+                    "unrecognized deck-code version (expected `{VERSION_PREFIX}`)"
+                )
             }
             CodeError::BadBase64 => write!(f, "deck code is not valid base64"),
             CodeError::Truncated => write!(f, "deck code is truncated"),
@@ -47,7 +50,9 @@ pub fn encode(deck: &Deck) -> String {
 
 /// Parse a `v1.<base64>` deck code back into a `Deck`.
 pub fn decode(code: &str) -> Result<Deck, CodeError> {
-    let body = code.strip_prefix(VERSION_PREFIX).ok_or(CodeError::BadVersion)?;
+    let body = code
+        .strip_prefix(VERSION_PREFIX)
+        .ok_or(CodeError::BadVersion)?;
     let bytes = URL_SAFE_NO_PAD
         .decode(body)
         .map_err(|_| CodeError::BadBase64)?;
@@ -82,9 +87,18 @@ mod tests {
     fn roundtrip_partial_and_reversed() {
         let deck = Deck {
             cards: vec![
-                DeckCard { card: TarotCard::TheTower, reversed: true },
-                DeckCard { card: TarotCard::AceOfCups, reversed: false },
-                DeckCard { card: TarotCard::KingOfPentacles, reversed: true },
+                DeckCard {
+                    card: TarotCard::TheTower,
+                    reversed: true,
+                },
+                DeckCard {
+                    card: TarotCard::AceOfCups,
+                    reversed: false,
+                },
+                DeckCard {
+                    card: TarotCard::KingOfPentacles,
+                    reversed: true,
+                },
             ],
         };
         assert_eq!(decode(&encode(&deck)).unwrap(), deck);

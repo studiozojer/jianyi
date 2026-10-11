@@ -152,11 +152,17 @@ mod tests {
         // Primary Image — Chinese must be present, not just English.
         assert!(out.contains("澤上于地"), "image Chinese missing:\n{out}");
         // Changing line — Chinese text of line 5.
-        assert!(out.contains("萃有位"), "changing-line Chinese missing:\n{out}");
+        assert!(
+            out.contains("萃有位"),
+            "changing-line Chinese missing:\n{out}"
+        );
         // Nuclear hexagram must be rendered.
         assert!(out.contains("Nuclear:"), "nuclear block missing:\n{out}");
         assert!(out.contains("漸"), "nuclear hexagram missing:\n{out}");
         // Resulting hexagram Judgment — Chinese present.
-        assert!(out.contains("利建侯行師"), "resulting Judgment Chinese missing:\n{out}");
+        assert!(
+            out.contains("利建侯行師"),
+            "resulting Judgment Chinese missing:\n{out}"
+        );
     }
 }

@@ -145,7 +145,10 @@ pub enum DrawError {
 impl std::fmt::Display for DrawError {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         match self {
-            DrawError::NotEnough { requested, available } => write!(
+            DrawError::NotEnough {
+                requested,
+                available,
+            } => write!(
                 f,
                 "cannot draw {requested} card(s); only {available} remain in the deck"
             ),
@@ -212,7 +215,10 @@ impl std::fmt::Display for ReturnError {
                 write!(f, "no card with index {i}; valid indices are 0..78")
             }
             ReturnError::Duplicate(i) => {
-                write!(f, "card index {i} is already in the deck; cannot return it twice")
+                write!(
+                    f,
+                    "card index {i} is already in the deck; cannot return it twice"
+                )
             }
         }
     }
@@ -242,8 +248,12 @@ pub fn return_to_bottom(deck: &Deck, index: u8, reversed: bool) -> Result<Deck, 
 pub fn split(deck: &Deck, keep_top: usize) -> (Deck, Deck) {
     let n = keep_top.min(deck.cards.len());
     (
-        Deck { cards: deck.cards[..n].to_vec() },
-        Deck { cards: deck.cards[n..].to_vec() },
+        Deck {
+            cards: deck.cards[..n].to_vec(),
+        },
+        Deck {
+            cards: deck.cards[n..].to_vec(),
+        },
     )
 }
 
@@ -306,15 +316,24 @@ mod tests {
             .zip(shuffled.cards.iter())
             .filter(|(a, b)| a.card == b.card)
             .count();
-        assert!(fixed < 8, "too many cards kept their original position: {fixed}");
+        assert!(
+            fixed < 8,
+            "too many cards kept their original position: {fixed}"
+        );
     }
 
     #[test]
     fn shuffle_with_reversals_produces_both_orientations() {
         let deck = Deck::new(None);
         let shuffled = shuffle(&deck, seed(), false);
-        assert!(shuffled.cards.iter().any(|c| c.reversed), "expected some reversed");
-        assert!(shuffled.cards.iter().any(|c| !c.reversed), "expected some upright");
+        assert!(
+            shuffled.cards.iter().any(|c| c.reversed),
+            "expected some reversed"
+        );
+        assert!(
+            shuffled.cards.iter().any(|c| !c.reversed),
+            "expected some upright"
+        );
     }
 
     #[test]
@@ -368,7 +387,10 @@ mod tests {
         let deck = Deck::new(Some(crate::tarot::deck::ArcanaFilter::Major)); // 22 cards
         assert!(matches!(
             draw(&deck, Select::Top(23)),
-            Err(DrawError::NotEnough { requested: 23, available: 22 })
+            Err(DrawError::NotEnough {
+                requested: 23,
+                available: 22
+            })
         ));
     }
 
@@ -377,7 +399,10 @@ mod tests {
         let deck = Deck::new(None);
         assert!(matches!(
             draw(&deck, Select::At(78)),
-            Err(DrawError::OutOfRange { position: 78, len: 78 })
+            Err(DrawError::OutOfRange {
+                position: 78,
+                len: 78
+            })
         ));
     }
 
@@ -404,7 +429,10 @@ mod tests {
         let returned = return_to_bottom(&rest, drawn[0].index, drawn[0].reversed).unwrap();
         assert_eq!(returned.len(), 78);
         assert_eq!(returned.cards.last().unwrap().card as u8, 0);
-        assert_ne!(returned.cards[0].card as u8, 0, "returned card must not be on top");
+        assert_ne!(
+            returned.cards[0].card as u8, 0,
+            "returned card must not be on top"
+        );
     }
 
     #[test]
@@ -414,7 +442,10 @@ mod tests {
         let returned = return_to_bottom(&rest, drawn[0].index, true).unwrap();
         let bottom = returned.cards.last().unwrap();
         assert_eq!(bottom.card as u8, drawn[0].index);
-        assert!(bottom.reversed, "returned card should carry the given orientation");
+        assert!(
+            bottom.reversed,
+            "returned card should carry the given orientation"
+        );
     }
 
     #[test]
@@ -436,13 +467,19 @@ mod tests {
     fn return_duplicate_is_rejected() {
         // The Fool (index 0) is still on top of a fresh deck.
         let deck = Deck::new(None);
-        assert_eq!(return_to_bottom(&deck, 0, false), Err(ReturnError::Duplicate(0)));
+        assert_eq!(
+            return_to_bottom(&deck, 0, false),
+            Err(ReturnError::Duplicate(0))
+        );
     }
 
     #[test]
     fn return_bad_index_is_rejected() {
         let deck = Deck::new(None);
-        assert_eq!(return_to_bottom(&deck, 78, false), Err(ReturnError::BadIndex(78)));
+        assert_eq!(
+            return_to_bottom(&deck, 78, false),
+            Err(ReturnError::BadIndex(78))
+        );
     }
 
     #[test]
@@ -477,15 +514,24 @@ mod tests {
         assert_eq!(drawn[0].index, 0);
         let restored = return_to_top(&rest, drawn[0].index, drawn[0].reversed).unwrap();
         assert_eq!(restored.len(), 78);
-        assert_eq!(restored.cards[0].card as u8, 0, "returned card must land on top");
+        assert_eq!(
+            restored.cards[0].card as u8, 0,
+            "returned card must land on top"
+        );
         assert_eq!(restored, deck, "return_to_top inverts a top draw exactly");
     }
 
     #[test]
     fn return_to_top_rejects_duplicate_and_bad_index() {
         let deck = Deck::new(None); // The Fool (0) already on top
-        assert_eq!(return_to_top(&deck, 0, false), Err(ReturnError::Duplicate(0)));
-        assert_eq!(return_to_top(&deck, 78, false), Err(ReturnError::BadIndex(78)));
+        assert_eq!(
+            return_to_top(&deck, 0, false),
+            Err(ReturnError::Duplicate(0))
+        );
+        assert_eq!(
+            return_to_top(&deck, 78, false),
+            Err(ReturnError::BadIndex(78))
+        );
     }
 
     // Build a pile from card indices (all upright).
@@ -589,7 +635,7 @@ mod tests {
     #[test]
     fn flip_toggles_every_orientation() {
         let mut deck = pile(&[0, 1, 2, 3]);
-        deck.cards[1].reversed = true;          // 1 reversed, the rest upright
+        deck.cards[1].reversed = true; // 1 reversed, the rest upright
         let out = flip(&deck);
         let states: Vec<bool> = out.cards.iter().map(|c| c.reversed).collect();
         assert_eq!(states, vec![true, false, true, true]);
@@ -608,6 +654,6 @@ mod tests {
     fn flip_is_involutive() {
         let mut deck = pile(&[10, 11, 12]);
         deck.cards[0].reversed = true;
-        assert_eq!(flip(&flip(&deck)), deck);   // flip ∘ flip == identity
+        assert_eq!(flip(&flip(&deck)), deck); // flip ∘ flip == identity
     }
 }

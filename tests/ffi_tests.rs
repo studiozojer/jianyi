@@ -10,9 +10,15 @@ fn call(f: unsafe extern "C" fn(*const c_char) -> JianyiResult, req: &str) -> (b
     let r = unsafe { f(c.as_ptr()) };
     let ok = r.success;
     let s = if ok {
-        unsafe { CStr::from_ptr(r.data) }.to_str().unwrap().to_owned()
+        unsafe { CStr::from_ptr(r.data) }
+            .to_str()
+            .unwrap()
+            .to_owned()
     } else {
-        unsafe { CStr::from_ptr(r.error) }.to_str().unwrap().to_owned()
+        unsafe { CStr::from_ptr(r.error) }
+            .to_str()
+            .unwrap()
+            .to_owned()
     };
     unsafe { jianyi_result_free(r) };
     (ok, s)
@@ -44,8 +50,14 @@ fn known_vector_cast() {
     assert_eq!(lines.len(), 6);
     assert!(lines.iter().all(|l| (6..=9).contains(l)));
     assert!(matches!(lines[4], 6 | 9), "changing line 5 must be old");
-    assert!(!v["primary"]["judgment"]["chinese"].as_str().unwrap().is_empty());
-    assert!(!v["primary"]["judgment"]["english"].as_str().unwrap().is_empty());
+    assert!(!v["primary"]["judgment"]["chinese"]
+        .as_str()
+        .unwrap()
+        .is_empty());
+    assert!(!v["primary"]["judgment"]["english"]
+        .as_str()
+        .unwrap()
+        .is_empty());
 }
 
 #[test]
